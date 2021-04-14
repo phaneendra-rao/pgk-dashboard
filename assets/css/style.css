@@ -1,0 +1,714 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #D9E1E7;
+}
+
+body .main-body {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.w-full {
+    width: 100%;
+}
+
+body .main-body .sidebar {
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #253AA3;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+body .main-body .sidebar .logo-section {
+    width: 100%;
+    height: 200px;
+    background-color: #253AA3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main-body .sidebar .logo-section .logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+body .main-body .sidebar .logo-section .label {
+    background-color: white;
+    padding: 8px 30px;
+    border-radius: 7px;
+    color: #253AA3;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+body .main-body .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+body .main-body .sidebar nav .nav-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+body .main-body .sidebar nav .active {
+    background-color: rgba(255, 255, 255, 0.26);
+    border-left: 10px solid white;
+    box-sizing: border-box;
+}
+
+body .main-body .sidebar nav .logout {
+    background-color: white;
+    border-radius: 30px;
+    color: #253AA3;
+    margin: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .main-body .sidebar nav .logout .label {
+    margin: 0px;
+    padding: 6px 0px;
+    font-size: 1.2rem;
+}
+
+body .main-body .sidebar nav .nav-item .nav-item-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1
+}
+
+body .main-body .sidebar nav .nav-item .nav-item-container .nav-item-label {
+    margin:0px;
+}
+
+body .main-body .sidebar nav .nav-item .nav-item-container .nav-item-icon {
+    margin-right: 24px;
+}
+
+body .main-body .sidebar nav .nav-item-collapsable-parent {
+    margin-bottom: 0px;
+}
+
+body .main-body .sidebar nav .nav-item-collapsable-child {
+    padding-left: 80px;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+body .main-body .sidebar nav .nav-item-collapsable-child .nav-item-container .nav-item-icon{
+    margin-right: 10px;
+}
+
+
+body .main-body .main-container {
+    margin-left: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+
+body .main-body .main-container .topbar {
+    height: 100px;
+    width: calc(100% - 300px);
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+body .main-body .main-container .topbar .date {
+    margin: 0px;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+body .main-body .main-container .topbar .search {
+    flex:1;
+    max-width: 500px;
+    border: 2px solid #9499B71F;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #D9E1E7;
+}
+
+body .main-body .main-container .topbar .search .form-control {
+    border: none;
+    background-color: transparent;
+}
+
+body .main-body .main-container .topbar .search .form-control:focus{
+    outline:0px !important; 
+    box-shadow: none !important;
+ }
+
+body .main-body .main-container .topbar .search .input-group-append .input-group-text {
+    background-color: transparent;
+    border:none;
+}
+
+body .main-body .main-container .topbar .profile-avatar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body .main-body .main-container .topbar .profile-avatar-container .profile-name {
+    margin: 0px;
+    padding-right: 10px;
+}
+
+body .main-body .main-container .topbar .profile-avatar-container .profile-avatar {
+    height: 45px;
+    width: 45px;
+    background-color: #253AA3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.points-btn:focus, .points-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+.btn-primary {
+    background-color: #253AA3;
+    border-radius: 8px;
+}
+
+.btn-secondary:focus, .btn-primary:focus, .btn-secondary:active, .btn-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #253AA3 !important;
+    color: white !important;
+}
+
+.btn-secondary:hover {
+    background-color: white !important;
+    color: #253AA3 !important;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #253AA3;
+    border-radius: 0px;
+    font-size: .870rem;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.points-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.points-btn .btn-label {
+    font-size: 1rem;
+}
+
+.points-btn .p-icon-container {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.points-btn .p-icon-container .p-icon {
+    color: #253AA3;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #253AA3;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.points-btn .points {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+p {
+ margin: 0px;
+}
+
+.dropdown-menu-right {
+    padding:0px;
+}
+
+.points-container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.points-container .credits-container {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #253AA3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+}
+
+.points-container .credits-container .label-head {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+
+.points-container .credits-container .credits-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+
+.points-container .credits-container .credits-body .credits-head {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #cacaca;
+}
+
+.points-container .credits-container .credits-body .credits-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.points-container .credits-container .credits-body .credits-points .credit-points-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.points-container .credits-container .credits-body .credits-points .credit-points-icon .points-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #253AA3;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #253AA3;
+    font-weight: bold;
+}
+
+.points-container .credits-container .credits-body .credits-points .credits-points-label {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.points-container .add-credits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #253AA3;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 10px 30px;
+}
+
+.points-container .add-credits-container .label {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.credits-table {
+    margin-top: 20px;
+}
+
+.credits-table tbody .t-row {
+    height: 45px;
+    border: 1px solid white;
+}
+
+.credits-table tbody .t-row .t-label {
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+.credits-table tbody .t-row .t-value {
+    background-color: white;
+    color: #253AA3;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body .main-body .page-body {
+    margin-top: 100px;
+    flex:1;
+}
+
+body .main-body .page-body .row {
+    margin: 12px;
+}
+
+body .main-body .page-body .welcome-widget {
+    border: 1px solid #253AA34D;
+    background-color: white;
+    border-radius: 5px;
+}
+
+body .main-body .page-body .welcome-widget .welcome-btn {
+    margin: 0px 10px;
+    padding: 14px 18px;
+    font-size: .900rem;
+    border-radius: 8px;
+}
+
+.welcome-avatar {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #253AA3;
+}
+
+.welcome-avatar .welcome-avatar-logo {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.welcome-content {
+    margin-left: 12px;
+}
+
+.welcome-content .title {
+    color: #2A3050;
+    font-size: 1.5rem;
+    letter-spacing: 0.06px;
+}
+
+.welcome-content .sub-title {
+    color: #878BA6;
+    font-size: 1rem;
+    letter-spacing: 0.06px;
+}
+
+.welcome-content .content {
+    color: #2A3050;
+    font-size: 1.3rem;
+    letter-spacing: 0.06px;
+}
+
+.quick-widget {
+    border: 1px solid #253AA34D;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    width: 32%;
+}
+
+.quick-widget-1 {
+    background-color: #FEAD43;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.quick-widget-2 {
+    background-color: #5473E8;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.quick-widget-3 {
+    background-color: #20BDC9;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.quick-widget-1 p, .quick-widget-2 p, .quick-widget-3 p {
+    padding: 10px 15px;
+}
+
+.quick-widget .quick-widget-value {
+    font-size: 3rem;
+}
+
+.quick-widget .quick-widget-label {
+    font-size: 1rem;
+}
+
+.full-widget {
+    width: 100%;
+    border: 1px solid #253AA34D;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header {
+    width: 100%;
+    background-color: #253AA3;
+    padding: 14px 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header .label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.bg-grey {
+    background-color: #878BA6;
+}
+
+.opacity-03 {
+    opacity: 0.3;
+}
+
+.opacity-04 {
+    opacity: 0.4;
+}
+
+.table-heading {
+    color: #000000;
+    font-weight: bold;
+    font-size: .880rem;
+}
+
+.table-passouts-header tr td {
+    text-align: center;
+}
+
+.table-passouts-body tr td {
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 8px;
+}
+
+.table-passouts-body tr:last-child td {
+    border-bottom: none;
+}
+
+.bg-primary {
+    background-color: #253AA3;
+}
+
+.account-info-widget {
+    background-color: #253AA3;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.account-info-widget .avatar-circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #253AA3;
+}
+
+.account-info-widget .label {
+    color: white;
+    font-size: .890rem;
+    margin-left: 15px;
+}
+
+.account-info-widget .label span {
+    font-weight: bold;
+}
+
+.notifications-widget .header {
+    color: white;
+}
+
+.notifications-widget .header .label {
+    margin-left: 12px;
+}
+
+.notifications-widget {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #253AA34D;
+    padding-bottom: 10px;
+}
+
+.notification-list .notification-list-item {
+    padding: 12.5px 8px; 
+    width: 100%;
+}
+
+.notification-list .notification-list-item .notification-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #253AA3;
+    color: white;
+    font-size: 2rem;
+}
+
+.notification-list .notification-list-item {
+    border-bottom: 1px solid #253AA34D;
+}
+
+.notification-list .notification-list-item:last-of-type {
+    border-bottom: none;
+}
+
+.notification-list .notification-list-item .notification-content {
+    margin-left: 10px;
+}
+
+.notification-list .notification-list-item .notification-content .sub-title {
+    font-size: .900rem;
+    flex: 1;
+}
+
+.notification-list .notification-list-item .notification-content .title-with-badge {
+    width: 100%;
+}
+
+.notification-list .notification-list-item .notification-content .title-with-badge .icon-badge {
+    background-color: #C2C4D1;
+    font-size: .600rem;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 10px;
+}
+
+.notification-list .notification-list-item .notification-content .title-with-badge .icon-badge i {
+    margin-right: 5px;
+}
+
+.notification-list .notification-list-item .notification-content .title-with-badge .title {
+    font-size: 1rem;
+}
+
+.table-universities-header tr td {
+    text-align: left;
+    font-size: .900rem;
+    color: #878BA6;
+}
+
+.table-universities-body tr td {
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 12px;
+}
+
+.table-universities-body tr:last-child td {
+    border-bottom: none;
+}
+
+.stat-widget {
+    background-color: #253AA3;
+    min-height: 80px;
+    border-right: 1px solid white;
+} 
+
+.stat-widget:last-of-type {
+    border-right: none;
+}
+
+.stat-widget .statNo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.stat-widget .stat-content {
+    margin-left: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.stat-widget .stat-content .title {
+    font-size: 1.2rem;
+}
+
+.stat-info-widget {
+    width: 32%;
+    padding: 24px;
+}
+
+.stat-info-widget:first-of-type {
+    background: transparent linear-gradient(91deg, #F68B10 0%, #F44E7F 100%) 0% 0% no-repeat padding-box;
+}
+
+.stat-info-widget:nth-of-type(2) {
+    background: transparent linear-gradient(91deg, #8310F6 0%, #12B8D3 100%) 0% 0% no-repeat padding-box;
+}
+
+.stat-info-widget:nth-of-type(3) {
+    background: transparent linear-gradient(91deg, #F610E1 0%, #7B0BEB 100%) 0% 0% no-repeat padding-box;
+}
+
+.stat-info-widget .stat-info-content {
+    text-transform: uppercase;
+    color: white;
+}
+
+.stat-info-widget .stat-info-content .sub-title {
+    font-weight: 200;
+    font-size: .800rem;
+}
+
+.stat-info-widget .stat-info-content .stat-info-no {
+    font-size: 3rem;
+    font-weight: bold;
+}

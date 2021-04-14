@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/style.css?v=1">
+</head>
+<body>
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="logo-section">
+                <img src="./assets/images/logo.png" alt="logo" class="img img-fluid logo">
+                <p class="label">Corporate</p>
+            </div>
+            <nav>
+                <a href="#" class="nav-item active">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-window"></i>
+                        </span>
+                        <p class="nav-item-label">Dashboard</p>
+                    </div>
+                </a>
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-share-square"></i>
+                        </span>
+                        <p class="nav-item-label">Publish</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </span>
+                        <p class="nav-item-label">Jobs</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <p class="nav-item-label">Hiring Criteria</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-building"></i>
+                        </span>
+                        <p class="nav-item-label">Profile</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file"></i>
+                        </span>
+                        <p class="nav-item-label">Information</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-folders"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribe</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">New Univ.</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribed Univ.</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </span>
+                        <p class="nav-item-label">Analytics</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <p class="nav-item-label">Notifications</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Account</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-comment"></i>
+                        </span>
+                        <p class="nav-item-label">Support</p>
+                    </div>
+                </a>
+
+                <a href="#" class="nav-item logout">
+                    <p class="label">Logout</p>
+                </a>
+            </nav>
+        </div>
+        <div class="main-container">
+            <div class="topbar"style="z-index: 1;">
+                <p class="date">Wednesday, 10th Febraury 2021</p>
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle points-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,10">
+                      <p class="btn-label">
+                        Credits
+                      </p>
+                      <span class="p-icon-container">
+                          <p class="p-icon">P</p>
+                      </span>
+                      <p class="points">162</p>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="points-container">
+                            <div class="credits-container">
+                                <p class="label-head">PGK CREDITS</p>
+                                <div class="credits-body">
+                                    <p class="credits-head">Available Balance</p>
+                                    <div class="credits-points">
+                                        <div class="credit-points-icon">
+                                            <p class="points-icon">P</p>
+                                        </div>
+                                        <p class="credits-points-label">162</p>
+                                    </div>
+                                    <table class="credits-table">
+                                        <tbody>
+                                            <tr class="t-row"><td class="t-label">Bonus Credits</td><td class="t-value">50</td></tr>
+                                            <tr class="t-row"><td class="t-label">Purchased Credits</td><td class="t-value">112</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="add-credits-container">
+                                <i class="fas fa-plus-circle"></i>
+                                <p class="label">Add Credits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-avatar-container">
+                    <p class="profile-name">Shalmali</p>
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-lg-9" style="padding:0px;">
+                        <div class="row welcome-widget d-flex flex-row justify-content-around align-items-center">
+                            <div class="col-md-6">
+                                <div class="row d-flex flex-row justify-content-start align-items-center">
+                                    <div class="welcome-avatar d-flex flex-column justify-content-center align-items-center">
+                                        <img src="./assets/images/logo.png" alt="logo" class="welcome-avatar-logo" />
+                                    </div>
+                                    <div class="welcome-content d-flex flex-column justify-content-start align-items-start">
+                                        <p class="title">Welcome, Shalmali!</p>
+                                        <p class="sub-title">Human Resource Director</p>
+                                        <p class="content">PGK Technologies Pvt Ltd.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="btn btn-primary welcome-btn flex-fill">
+                                        Add Job
+                                    </button>
+                                    <button type="button" class="btn btn-primary welcome-btn flex-fill">
+                                        Subscribe to Univ
+                                    </button>
+                                    <button type="button" class="btn btn-primary welcome-btn flex-fill">
+                                        Publish Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                            <div class="d-flex flex-column justify-content-between align-items-center quick-widget">
+                                <div class="d-flex flex-row justify-content-center align-items-center quick-widget-1">
+                                    <i class="fas fa-share"></i>
+                                    <p>Jobs Published</p>
+                                </div>
+                                <p class="quick-widget-value">34</p>
+                                <p class="quick-widget-label">8 Published in the recent month</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center quick-widget">
+                                <div class="d-flex flex-row justify-content-center align-items-center quick-widget-2">
+                                    <i class="fas fa-file"></i>
+                                    <p>Applications Received</p>
+                                </div>
+                                <p class="quick-widget-value">697</p>
+                                <p class="quick-widget-label">8 Received in the last 2 days</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center quick-widget">
+                                <div class="d-flex flex-row justify-content-center align-items-center quick-widget-3">
+                                    <i class="fas fa-briefcase"></i>
+                                    <p>Job Offers Made</p>
+                                </div>
+                                <p class="quick-widget-value">321</p>
+                                <p class="quick-widget-label">10 Made in the recent month</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-column justify-content-start full-widget">
+                                <div class="d-flex flex-row justify-content-between align-items-center header">
+                                    <p class="label">Tentative Passouts & Passing Month</p>
+                                    <button class="btn btn-secondary" type="button">Check Analytics</button>
+                                </div>
+                                <table class="table table-borderless">
+                                    <thead class="table-passouts-header">
+                                        <tr class="bg-grey opacity-04">
+                                            <td class="table-heading">Name of the University</td>
+                                            <td class="table-heading">Tentative Passing Month</td>
+                                            <td class="table-heading">Expected Passouts</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-passouts-body">
+                                        <tr>
+                                            <td>JNTU</td>
+                                            <td>June, 2021</td>
+                                            <td>767</td>
+                                            <td><button class="btn-primary">Subscribe</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>JNTU</td>
+                                            <td>June, 2021</td>
+                                            <td>767</td>
+                                            <td><button class="btn-primary">Subscribe</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>JNTU</td>
+                                            <td>June, 2021</td>
+                                            <td>767</td>
+                                            <td><button class="btn-primary">Subscribe</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>JNTU</td>
+                                            <td>June, 2021</td>
+                                            <td>767</td>
+                                            <td><button class="btn-primary">Subscribe</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>JNTU</td>
+                                            <td>June, 2021</td>
+                                            <td>767</td>
+                                            <td><button class="btn-primary">Subscribe</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-column justify-content-start full-widget">
+                                <div class="d-flex flex-row justify-content-between align-items-center header">
+                                    <p class="label">Universities Conversion Ratio Last Year</p>
+                                    <button class="btn btn-secondary" type="button">Check Analytics</button>
+                                </div>
+                                <div style="height: 350px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="padding:0px;">
+                        <div class="row d-flex flex-row justify-content-center align-items-center account-info-widget">
+                            <div class="avatar-circle d-flex flex-column justify-content-center align-items-center">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-start align-items-start">
+                                <p class="label">Your Account is active</p>
+                                <p class="label">Valid till <span>20-03-2021</span></p>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-row justify-content-center align-items-center notifications-widget">
+                            <div class="d-flex flex-row justify-content-start align-items-center header">
+                                <i class="fas fa-bell"></i>
+                                <p class="label">Notifications</p>
+                            </div>
+                            <div class="notification-list d-flex flex-column justify-content-start align-items-start">
+                                <div class="notification-list-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="notification-icon d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start notification-content">
+                                        <div class="title-with-badge d-flex flex-row justify-content-between align-items-center">
+                                            <p class="title">Osmania University</p>
+                                            <span class="icon-badge d-flex flex-row justify-content-between align-items-center"><i class="fas fa-clock"></i> 5 min ago</span>
+                                        </div>
+                                        <p class="sub-title">has requested for Campus Hiring</p>
+                                    </div>
+                                </div>
+                                <div class="notification-list-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="notification-icon d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start notification-content">
+                                        <div class="title-with-badge d-flex flex-row justify-content-between align-items-center">
+                                            <p class="title">Osmania University</p>
+                                            <span class="icon-badge d-flex flex-row justify-content-between align-items-center"><i class="fas fa-clock"></i> 5 min ago</span>
+                                        </div>
+                                        <p class="sub-title">has requested for Campus Hiring</p>
+                                    </div>
+                                </div>
+                                <div class="notification-list-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="notification-icon d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start notification-content">
+                                        <div class="title-with-badge d-flex flex-row justify-content-between align-items-center">
+                                            <p class="title">Osmania University</p>
+                                            <span class="icon-badge d-flex flex-row justify-content-between align-items-center"><i class="fas fa-clock"></i> 5 min ago</span>
+                                        </div>
+                                        <p class="sub-title">has requested for Campus Hiring</p>
+                                    </div>
+                                </div>
+                                <div class="notification-list-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="notification-icon d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start notification-content">
+                                        <div class="title-with-badge d-flex flex-row justify-content-between align-items-center">
+                                            <p class="title">Osmania University</p>
+                                            <span class="icon-badge d-flex flex-row justify-content-between align-items-center"><i class="fas fa-clock"></i> 5 min ago</span>
+                                        </div>
+                                        <p class="sub-title">has requested for Campus Hiring</p>
+                                    </div>
+                                </div>
+                                <div class="notification-list-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="notification-icon d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start notification-content">
+                                        <div class="title-with-badge d-flex flex-row justify-content-between align-items-center">
+                                            <p class="title">Osmania University</p>
+                                            <span class="icon-badge d-flex flex-row justify-content-between align-items-center"><i class="fas fa-clock"></i> 5 min ago</span>
+                                        </div>
+                                        <p class="sub-title">has requested for Campus Hiring</p>
+                                    </div>
+                                </div>
+                                <div class="notification-list-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="notification-icon d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start notification-content">
+                                        <div class="title-with-badge d-flex flex-row justify-content-between align-items-center">
+                                            <p class="title">Osmania University</p>
+                                            <span class="icon-badge d-flex flex-row justify-content-between align-items-center"><i class="fas fa-clock"></i> 5 min ago</span>
+                                        </div>
+                                        <p class="sub-title">has requested for Campus Hiring</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-block" type="button">View all notifications</button>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-row justify-content-center align-items-center notifications-widget">
+                            <div class="d-flex flex-row justify-content-center align-items-center header">
+                                <p class="label">Top 5 Universities in 2019</p>
+                            </div>
+                            <div class="notification-list d-flex flex-column justify-content-start align-items-start">
+                                <table class="table table-borderless">
+                                    <thead class="table-universities-header">
+                                        <tr>
+                                            <td>Rank</td>
+                                            <td>Name of the University</td>
+                                            <td>Hirings</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-universities-body">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>JNTU, Hyd</td>
+                                            <td>542</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Osmania Univ., Hyd</td>
+                                            <td>496</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>University of Hyd</td>
+                                            <td>401</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>IIT, Hyderabad</td>
+                                            <td>387</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>GITAM, Hyderabad</td>
+                                            <td>313</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button class="btn btn-primary btn-block" type="button">Check Analytics</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-row justify-content-between align-items-center w-full px-3">
+                        <div class="d-flex flex-row justify-content-center align-items-center flex-fill stat-widget">
+                            <p class="statNo">157</p>
+                            <div class="d-flex flex-column justify-content-center align-items-center stat-content">
+                                <p class="title">Currently</p>
+                                <p class="sub-title">Online</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center align-items-center flex-fill stat-widget">
+                            <p class="statNo">82</p>
+                            <div class="d-flex flex-column justify-content-center align-items-center stat-content">
+                                <p class="title">Joined In</p>
+                                <p class="sub-title">Last Hour</p>                                
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center align-items-center flex-fill stat-widget">
+                            <p class="statNo">785</p>
+                            <div class="d-flex flex-column justify-content-center align-items-center stat-content">
+                                <p class="title">Got Placed</p>
+                                <p class="sub-title">Through Our</p>
+                                <p class="sub-title">Platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-row justify-content-between align-items-center w-full px-3">
+                        <div class="d-flex flex-row justify-content-start align-items-center stat-info-widget">
+                            <div class="d-flex flex-column justify-content-between align-items-start stat-info-content">
+                                <p class="title">Corporates</p>
+                                <p class="sub-title">Registered</p>
+                                <p class="stat-info-no">258</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start align-items-center stat-info-widget">
+                            <div class="d-flex flex-column justify-content-between align-items-start stat-info-content">
+                                <p class="title">Universities</p>
+                                <p class="sub-title">Registered</p>
+                                <p class="stat-info-no">364</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start align-items-center stat-info-widget">
+                            <div class="d-flex flex-column justify-content-between align-items-start stat-info-content">
+                                <p class="title">Students</p>
+                                <p class="sub-title">Registered</p>
+                                <p class="stat-info-no">1098</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $('.dropdown-toggle').dropdown()
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/cd7a740979.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
