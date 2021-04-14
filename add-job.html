@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.2">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="logo-section">
+                <img src="./assets/images/logo.png" alt="logo" class="img img-fluid logo">
+                <p class="label">Corporate</p>
+            </div>
+            <nav>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-window"></i>
+                        </span>
+                        <p class="nav-item-label">Dashboard</p>
+                    </div>
+                </a>
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-share-square"></i>
+                        </span>
+                        <p class="nav-item-label">Publish</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item active nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </span>
+                        <p class="nav-item-label">Jobs</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <p class="nav-item-label">Hiring Criteria</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-building"></i>
+                        </span>
+                        <p class="nav-item-label">Profile</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file"></i>
+                        </span>
+                        <p class="nav-item-label">Information</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-folders"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribe</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">New Univ.</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribed Univ.</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </span>
+                        <p class="nav-item-label">Analytics</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <p class="nav-item-label">Notifications</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Account</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-comment"></i>
+                        </span>
+                        <p class="nav-item-label">Support</p>
+                    </div>
+                </a>
+
+                <a href="#" class="nav-item logout">
+                    <p class="label">Logout</p>
+                </a>
+            </nav>
+        </div>
+        <div class="main-container">
+            <div class="topbar" style="z-index: 1;">
+                <p class="date">Wednesday, 10th Febraury 2021</p>
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle points-btn" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="0,10">
+                        <p class="btn-label">
+                            Credits
+                        </p>
+                        <span class="p-icon-container">
+                            <p class="p-icon">P</p>
+                        </span>
+                        <p class="points">162</p>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="points-container">
+                            <div class="credits-container">
+                                <p class="label-head">PGK CREDITS</p>
+                                <div class="credits-body">
+                                    <p class="credits-head">Available Balance</p>
+                                    <div class="credits-points">
+                                        <div class="credit-points-icon">
+                                            <p class="points-icon">P</p>
+                                        </div>
+                                        <p class="credits-points-label">162</p>
+                                    </div>
+                                    <table class="credits-table">
+                                        <tbody>
+                                            <tr class="t-row">
+                                                <td class="t-label">Bonus Credits</td>
+                                                <td class="t-value">50</td>
+                                            </tr>
+                                            <tr class="t-row">
+                                                <td class="t-label">Purchased Credits</td>
+                                                <td class="t-value">112</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="add-credits-container" data-toggle="modal" data-target="#exampleModalCenter">
+                                <i class="fas fa-plus-circle"></i>
+                                <p class="label">Add Credits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-avatar-container">
+                    <p class="profile-name">Shalmali</p>
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="row add-new-jobs-section">
+                    <div class="d-flex flex-column justify-content-start align-items-center w-full">
+                        <p class="heading">Add New Job</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center job-details-form w-full">
+                        <input type="text" class="form-control" placeholder="Name of the job" />
+                        <select name="" class="form-control">
+                            <option>Select Hiring Criteria</option>
+                        </select>
+                        <select name="" class="form-control">
+                            <option>Open</option>
+                        </select>
+                    </div>
+                    <div class="add-new-jobs-section-list  w-full">
+                        <div
+                            class="add-new-jobs-section-item d-flex flex-row justify-content-between align-items-center">
+                            <p class="sno">1</p>
+                            <select name="" class="form-control" id="">
+                                <option value="">Select the skill set</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="No of positions">
+                            <select name="" class="form-control" id="">
+                                <option value="">Select the location</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="Salary Range">
+                            <input type="date" class="form-control" placeholder="Date of hiring" />
+                            <div class="round-btn d-flex justify-content-center align-items-center"><i
+                                    class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center align-items-center w-full mt-4">
+                        <div class="job-btn">Save Job</div>
+                        <div class="job-btn">Cancel</div>
+                        <div class="job-btn" data-toggle="modal" data-target="#exampleModalCenter">Publish Job</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content job-publish-modal">
+                <div class="modal-header job-publish-modal-header">
+                    <p class="heading w-full">Publish Jobs</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div
+                    class="modal-body job-publish-modal-body d-flex flex-column justify-content-center align-items-center">
+                    <div class="heading-section d-flex justify-content-start align-items-start w-full">
+                        <input type="checkbox" name="" class="job-checkbox">
+                        <div class="d-flex flex-column justify-content-start align-items-center w-full body-section">
+                            <div class="header d-flex flex-row justify-content-between align-items-center w-full">
+                                <p class="job-label">Job - 1</p>
+                                <div class="job-heading-btn">Open</div>
+                                <select name="" class="form-control">
+                                    <option value="">Hiring Criteria</option>
+                                </select>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <p class="label">Details</p>
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                            </div>
+                            <table class="table table-borderless table-striped job-publish-table">
+                                <thead class="job-publish-table-header">
+                                    <tr class="bg-grey opacity-04">
+                                        <td class="table-heading">Skill Set</td>
+                                        <td class="table-heading">No of Positions</td>
+                                        <td class="table-heading">Location</td>
+                                        <td class="table-heading">Salary Range</td>
+                                        <td class="table-heading">Date of hiring</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" name="" class="table-item-checkbox"> Programming</td>
+                                        <td>547</td>
+                                        <td>Hyderabad</td>
+                                        <td>5L - 7L</td>
+                                        <td>22 - Feb - 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="" class="table-item-checkbox"> Oracle</td>
+                                        <td>258</td>
+                                        <td>Bangalore</td>
+                                        <td>6L - 8L</td>
+                                        <td>01 - Mar - 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="" class="table-item-checkbox"> Java</td>
+                                        <td>389</td>
+                                        <td>Pune</td>
+                                        <td>5L - 7L</td>
+                                        <td>07 - Mar - 2021</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex flex-row justify-content-center align-items-center w-full mt-4">
+                                <div class="job-btn">Go back and edit</div>
+                                <div class="job-btn">Publish</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.dropdown-toggle').dropdown()
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/cd7a740979.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

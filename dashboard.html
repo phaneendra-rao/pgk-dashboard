@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./assets/css/style.css?v=1">
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.2">
 </head>
 <body>
     <div class="main-body">
@@ -183,7 +183,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="add-credits-container">
+                            <div class="add-credits-container" data-toggle="modal" data-target="#exampleModalCenter">
                                 <i class="fas fa-plus-circle"></i>
                                 <p class="label">Add Credits</p>
                             </div>
@@ -201,29 +201,25 @@
                 <div class="row">
                     <div class="col-lg-9" style="padding:0px;">
                         <div class="row welcome-widget d-flex flex-row justify-content-around align-items-center">
-                            <div class="col-md-6">
-                                <div class="row d-flex flex-row justify-content-start align-items-center">
-                                    <div class="welcome-avatar d-flex flex-column justify-content-center align-items-center">
-                                        <img src="./assets/images/logo.png" alt="logo" class="welcome-avatar-logo" />
-                                    </div>
-                                    <div class="welcome-content d-flex flex-column justify-content-start align-items-start">
-                                        <p class="title">Welcome, Shalmali!</p>
-                                        <p class="sub-title">Human Resource Director</p>
-                                        <p class="content">PGK Technologies Pvt Ltd.</p>
-                                    </div>
+                            <div class="row d-flex flex-row justify-content-start align-items-center">
+                                <div class="welcome-avatar d-flex flex-column justify-content-center align-items-center">
+                                    <img src="./assets/images/logo.png" alt="logo" class="welcome-avatar-logo" />
+                                </div>
+                                <div class="welcome-content d-flex flex-column justify-content-start align-items-start">
+                                    <p class="title">Welcome, Shalmali!</p>
+                                    <p class="sub-title">Human Resource Director</p>
+                                    <p class="content">PGK Technologies Pvt Ltd.</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <button type="button" class="btn btn-primary welcome-btn flex-fill">
-                                        Add Job
-                                    </button>
-                                    <button type="button" class="btn btn-primary welcome-btn flex-fill">
-                                        Subscribe to Univ
-                                    </button>
-                                    <button type="button" class="btn btn-primary welcome-btn flex-fill">
-                                        Publish Info
-                                    </button>
+                            <div class="d-flex justify-content-between align-items-center welcome-btns-main">
+                                <div class="welcome-btns d-flex align-items-center justify-content-center">
+                                    <p>Add Job</p>
+                                </div>
+                                <div class="welcome-btns d-flex align-items-center justify-content-center">
+                                    <p>Subscribe to Univ</p>
+                                </div>
+                                <div class="welcome-btns d-flex align-items-center justify-content-center">
+                                    <p>Publish Info</p>
                                 </div>
                             </div>
                         </div>
@@ -273,31 +269,41 @@
                                             <td>JNTU</td>
                                             <td>June, 2021</td>
                                             <td>767</td>
-                                            <td><button class="btn-primary">Subscribe</button></td>
+                                            <td>
+                                                <div class="table-btn">Subscribe</div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>JNTU</td>
                                             <td>June, 2021</td>
                                             <td>767</td>
-                                            <td><button class="btn-primary">Subscribe</button></td>
+                                            <td>
+                                                <div class="table-btn">Subscribe</div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>JNTU</td>
                                             <td>June, 2021</td>
                                             <td>767</td>
-                                            <td><button class="btn-primary">Subscribe</button></td>
+                                            <td>
+                                                <div class="table-btn">Subscribe</div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>JNTU</td>
                                             <td>June, 2021</td>
                                             <td>767</td>
-                                            <td><button class="btn-primary">Subscribe</button></td>
+                                            <td>
+                                                <div class="table-btn">Subscribe</div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>JNTU</td>
                                             <td>June, 2021</td>
                                             <td>767</td>
-                                            <td><button class="btn-primary">Subscribe</button></td>
+                                            <td>
+                                                <div class="table-btn">Subscribe</div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -316,11 +322,11 @@
                         </div>
                     </div>
                     <div class="col-lg-3" style="padding:0px;">
-                        <div class="row d-flex flex-row justify-content-center align-items-center account-info-widget">
+                        <div class="row d-flex flex-row justify-content-between align-items-center account-info-widget">
                             <div class="avatar-circle d-flex flex-column justify-content-center align-items-center">
                                 <i class="fas fa-check"></i>
                             </div>
-                            <div class="d-flex flex-column justify-content-start align-items-start">
+                            <div class="d-flex flex-column justify-content-start align-items-start account-info-content">
                                 <p class="label">Your Account is active</p>
                                 <p class="label">Valid till <span>20-03-2021</span></p>
                             </div>
@@ -403,14 +409,14 @@
                                         <p class="sub-title">has requested for Campus Hiring</p>
                                     </div>
                                 </div>
-                                <button class="btn btn-primary btn-block" type="button">View all notifications</button>
+                                <div class="regular-custom-btn">View all notifications</div>
                             </div>
                         </div>
                         <div class="row d-flex flex-row justify-content-center align-items-center notifications-widget">
-                            <div class="d-flex flex-row justify-content-center align-items-center header">
+                            <div class="d-flex flex-row justify-content-center align-items-center univ-list-header">
                                 <p class="label">Top 5 Universities in 2019</p>
                             </div>
-                            <div class="notification-list d-flex flex-column justify-content-start align-items-start">
+                            <div class="univ-table d-flex flex-column justify-content-start align-items-start">
                                 <table class="table table-borderless">
                                     <thead class="table-universities-header">
                                         <tr>
@@ -447,7 +453,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <button class="btn btn-primary btn-block" type="button">Check Analytics</button>
+                                <div class="regular-custom-btn">Check Analytics</div>
                             </div>
                         </div>
                     </div>
@@ -502,6 +508,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content purchase-modal">
+                <div class="modal-header purchase-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body purchase-modal-body d-flex flex-column justify-content-center align-items-center">
+                    <p class="heading">How many credits would you like to purchase ?</p>
+                    <input type="number" name="credit_points" class="form-control credits-input" />
+                </div>
+                <div class="modal-footer-full-btn">
+                    Purchase
                 </div>
             </div>
         </div>
