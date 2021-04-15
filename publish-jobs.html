@@ -59,7 +59,7 @@
                         <p class="nav-item-label">Hiring Criteria</p>
                     </div>
                 </a>
-                <a href="jobs.html" class="nav-item nav-item-collapsable-child child-active">
+                <a href="jobs.html" class="nav-item nav-item-collapsable-child">
                     <div class="nav-item-container">
                         <span class="nav-item-icon">
                             <i class="fas fa-briefcase"></i>
@@ -98,7 +98,7 @@
                         <p class="nav-item-label">Hiring Criteria</p>
                     </div>
                 </a>
-                <a href="publish-jobs.html" class="nav-item nav-item-collapsable-child">
+                <a href="publish-jobs.html" class="nav-item nav-item-collapsable-child child-active">
                     <div class="nav-item-container">
                         <span class="nav-item-icon">
                             <i class="fas fa-briefcase"></i>
@@ -113,14 +113,14 @@
                             <i class="fas fa-file"></i>
                         </span>
                         <p class="nav-item-label">Other Information</p>
-                        </div>
-                        </a>
-                        <a href="#" class="nav-item nav-item-collapsable-child">
-                            <div class="nav-item-container">
-                                <span class="nav-item-icon">
-                                    <i class="fas fa-history"></i>
-                                </span>
-                                <p class="nav-item-label">Publish History</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-history"></i>
+                        </span>
+                        <p class="nav-item-label">Publish History</p>
                     </div>
                 </a>
                 <!-- Collapsable children end -->
@@ -206,8 +206,8 @@
                     </div>
                 </div>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle points-btn" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" data-offset="0,10">
+                    <button type="button" class="btn btn-primary dropdown-toggle points-btn" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="0,10">
                         <p class="btn-label">
                             Available Tokens
                         </p>
@@ -248,43 +248,87 @@
                 </div>
             </div>
             <div class="page-body">
-                <div class="row add-new-jobs-section">
+                <div class="row published-jobs-section">
                     <div class="d-flex flex-column justify-content-start align-items-center w-full">
-                        <p class="heading">Add New Job</p>
-                    </div>
-                    <div class="d-flex flex-row justify-content-around align-items-center job-details-form w-full">
-                        <input type="text" class="form-control" placeholder="Name of the job" />
-                        <select name="" class="form-control">
-                            <option>Select Hiring Criteria</option>
-                        </select>
-                        <select name="" class="form-control">
-                            <option>Open</option>
-                        </select>
-                    </div>
-                    <div class="add-new-jobs-section-list  w-full">
+                        <p class="heading">Publish Jobs</p>
                         <div
-                            class="add-new-jobs-section-item d-flex flex-row justify-content-between align-items-center">
-                            <p class="sno">1</p>
-                            <select name="" class="form-control" id="">
-                                <option value="">Select the skill set</option>
-                            </select>
-                            <input type="text" class="form-control" placeholder="No of positions">
-                            <select name="" class="form-control" id="">
-                                <option value="">Select the location</option>
-                            </select>
-                            <input type="text" class="form-control" placeholder="Salary Range">
-                            <input type="date" class="form-control" placeholder="Date of hiring" />
-                            <div class="round-btn d-flex justify-content-center align-items-center"><i
-                                    class="fas fa-plus"></i></div>
+                            class="w-full d-flex justify-content-start align-content-center publish-selected-btn-container">
+                            <input type="checkbox" class="publish-job-checkbox align-self-center" />
+                            <div class="publish-selected-btn">Publish Selected</div>
                         </div>
-                    </div>
-                    <div class="d-flex flex-row justify-content-center align-items-center w-full mt-4">
-                        <div class="job-btn">Save Job</div>
-                        <div class="job-btn">Cancel</div>
+                        <div
+                            class="w-full d-flex justify-content-start align-content-center publish-selected-btn-container">
+                            <input type="checkbox" class="publish-job-checkbox align-self-center" />
+                            <div
+                                class="d-flex flex-row justify-content-between align-items-center jobs-list-item w-full">
+                                <div class="item d-flex flex-row justify-content-between align-items-center w-full">
+                                    <div
+                                        class="job-icon job-blue-icon d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <p class="job-label">Job - 1</p>
+                                    <select name="" class="form-control job-dropdown">
+                                        <option value="">Hiring Criteria</option>
+                                    </select>
+                                    <select name="" class="form-control job-dropdown">
+                                        <option value="">Open</option>
+                                    </select>
+                                    <p class="job-published-date">Created on 09/02/2021</p>
+                                </div>
+                                <div class="vertical-divider"></div>
+                                <div
+                                    class="job-list-item-details-container d-flex flex-row justify-content-center align-items-center">
+                                    <div class="job-details-btn d-flex flex-row justify-content-around align-items-center"
+                                        data-toggle="modal" data-target="#exampleModalCenter">
+                                        <p>Publish</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full d-flex justify-content-start align-content-center publish-selected-btn-container">
+                            <input type="checkbox" class="publish-job-checkbox align-self-center" />
+                            <div
+                                class="d-flex flex-row justify-content-between align-items-center jobs-list-item w-full">
+                                <div class="item d-flex flex-row justify-content-between align-items-center w-full">
+                                    <div
+                                        class="job-icon job-orange-icon d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <p class="job-label">Job - 2</p>
+                                    <select name="" class="form-control job-dropdown">
+                                        <option value="">Hiring Criteria</option>
+                                    </select>
+                                    <select name="" class="form-control job-dropdown">
+                                        <option value="">Open</option>
+                                    </select>
+                                    <p class="job-published-date">Created on 09/02/2021</p>
+                                </div>
+                                <div class="vertical-divider"></div>
+                                <div
+                                    class="job-list-item-details-container d-flex flex-row justify-content-center align-items-center">
+                                    <div class="job-details-btn d-flex flex-row justify-content-around align-items-center"
+                                        data-toggle="modal" data-target="#exampleModalCenter">
+                                        <p>Publish</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="row jobs-saved-section">
+                <div class="d-flex flex-column justify-content-start align-items-center w-full">
+                    <p class="heading w-full">Published Jobs History</p>
+                </div>
+            </div>
+            <div class="row jobs-saved-section-list">
+                <div class="d-flex flex-column justify-content-start align-items-center w-full">
+                    <p class="no-list-message w-full">No jobs saved to display here</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -292,7 +336,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content job-publish-modal">
                 <div class="modal-header job-publish-modal-header">
-                    <p class="heading w-full">Publish Jobs</p>
+                    <p class="heading w-full">Job Details</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -300,7 +344,7 @@
                 <div
                     class="modal-body job-publish-modal-body d-flex flex-column justify-content-center align-items-center">
                     <div class="heading-section d-flex justify-content-start align-items-start w-full">
-                        <input type="checkbox" name="" class="job-checkbox">
+                        <input type="checkbox" name="" class="job-checkbox align-self-start">
                         <div class="d-flex flex-column justify-content-start align-items-center w-full body-section">
                             <div class="header d-flex flex-row justify-content-between align-items-center w-full">
                                 <p class="job-label">Job - 1</p>
@@ -315,7 +359,7 @@
                             </div>
                             <table class="table table-borderless table-striped job-publish-table">
                                 <thead class="job-publish-table-header">
-                                    <tr class="bg-grey opacity-04">
+                                    <tr>
                                         <td class="table-heading">Skill Set</td>
                                         <td class="table-heading">No of Positions</td>
                                         <td class="table-heading">Location</td>
@@ -348,7 +392,7 @@
                                 </tbody>
                             </table>
                             <div class="d-flex flex-row justify-content-center align-items-center w-full mt-4">
-                                <div class="job-btn">Go back and edit</div>
+                                <div class="job-btn">Cancel</div>
                                 <div class="job-btn">Publish</div>
                             </div>
                         </div>
