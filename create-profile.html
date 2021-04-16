@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.2">
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="assets/css/inner.css" />
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="logo-section">
+                <img src="./assets/images/logo.png" alt="logo" class="img img-fluid logo">
+                <p class="label">Corporate</p>
+            </div>
+            <nav>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-window"></i>
+                        </span>
+                        <p class="nav-item-label">Dashboard</p>
+                    </div>
+                </a>
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-share-square"></i>
+                        </span>
+                        <p class="nav-item-label">Publish</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item active nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </span>
+                        <p class="nav-item-label">Jobs</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <p class="nav-item-label">Hiring Criteria</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-building"></i>
+                        </span>
+                        <p class="nav-item-label">Profile</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file"></i>
+                        </span>
+                        <p class="nav-item-label">Information</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-folders"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribe</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">New Univ.</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribed Univ.</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </span>
+                        <p class="nav-item-label">Analytics</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <p class="nav-item-label">Notifications</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Account</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-comment"></i>
+                        </span>
+                        <p class="nav-item-label">Support</p>
+                    </div>
+                </a>
+
+                <a href="#" class="nav-item logout">
+                    <p class="label">Logout</p>
+                </a>
+            </nav>
+        </div>
+        <div class="main-container">
+            <div class="topbar" style="z-index: 1;">
+                <p class="date">Wednesday, 10th Febraury 2021</p>
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle points-btn" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="0,10">
+                        <p class="btn-label">
+                            Credits
+                        </p>
+                        <span class="p-icon-container">
+                            <p class="p-icon">P</p>
+                        </span>
+                        <p class="points">162</p>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="points-container">
+                            <div class="credits-container">
+                                <p class="label-head">PGK CREDITS</p>
+                                <div class="credits-body">
+                                    <p class="credits-head">Available Balance</p>
+                                    <div class="credits-points">
+                                        <div class="credit-points-icon">
+                                            <p class="points-icon">P</p>
+                                        </div>
+                                        <p class="credits-points-label">162</p>
+                                    </div>
+                                    <table class="credits-table">
+                                        <tbody>
+                                            <tr class="t-row">
+                                                <td class="t-label">Bonus Credits</td>
+                                                <td class="t-value">50</td>
+                                            </tr>
+                                            <tr class="t-row">
+                                                <td class="t-label">Purchased Credits</td>
+                                                <td class="t-value">112</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="add-credits-container" data-toggle="modal" data-target="#exampleModalCenter">
+                                <i class="fas fa-plus-circle"></i>
+                                <p class="label">Add Credits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-avatar-container">
+                    <p class="profile-name">Shalmali</p>
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <h3 class="main-title">Corporate Profile</h3>
+                <div class="profile-pic">
+                    <img src="assets/images/logo.png" class="profile-pic-img" alt="no img" />
+                    <div class="upload-pic">
+                        <label for="profile">Click to <br /> Change your <br /> Logo</label>
+                        <input type="file" name="profile" id="profile" class="upload-pic-inp" />
+                    </div>
+                </div>
+
+                <form>
+                    <div class="profile-box">
+                        <aside class="profile-side">
+                            <h3 class="profile-side-title">Basic</h3>
+                        </aside>
+                        <div class="profile-data">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <input type="text" name="" class="d-inp" placeholder="Stakeholder ID"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <input type="text" name="" class="d-inp"
+                                            placeholder="Organization Registration ID / CIN *" required />
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <select name="" class="d-inp" required>
+                                            <option value="">Corporate Sector *</option>
+                                            <option value="">Program</option>
+                                            <option value="">Program</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <select name="" class="d-inp" required>
+                                            <option value="">Corporate Category *</option>
+                                            <option value="">Program</option>
+                                            <option value="">Program</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <select name="" class="d-inp" required>
+                                            <option value="">Industry Vertical *</option>
+                                            <option value="">Program</option>
+                                            <option value="">Program</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <input type="date" name="" class="d-inp" title="Date of Commencement"
+                                            placeholder="Date of Commencement" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-box">
+                        <aside class="profile-side">
+                            <h3 class="profile-side-title">Address & Contact</h3>
+                        </aside>
+                        <div class="profile-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="reg-label">Corporate Headquarters</h6>
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Address (Line 1)"
+                                            required />
+                                    </div>
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Address (Line 2)"
+                                            required />
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pr-1">
+                                            <div class="d-grp">
+                                                <select name="" id="" class="d-inp" required>
+                                                    <option value="">Lecturer</option>
+                                                    <option value="">Evaluator</option>
+                                                    <option value="">Admin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-1">
+                                            <div class="d-grp">
+                                                <select name="" id="" class="d-inp" required>
+                                                    <option value="">Lecturer</option>
+                                                    <option value="">Evaluator</option>
+                                                    <option value="">Admin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 pr-1">
+                                            <div class="d-grp">
+                                                <input type="text" name="addr" class="d-inp" placeholder="City"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 px-1">
+                                            <div class="d-grp">
+                                                <input type="text" name="addr" class="d-inp" placeholder="District"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pl-1">
+                                            <div class="d-grp">
+                                                <input type="number" name="addr" class="d-inp" placeholder="Zipcode"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pr-1">
+                                            <div class="d-grp">
+                                                <input type="number" name="addr" class="d-inp"
+                                                    placeholder="Phone Number" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-1">
+                                            <div class="d-grp">
+                                                <input type="email" name="addr" class="d-inp" placeholder="Office mail"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <h6 class="reg-label">Corporate Headquarters</h6>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                            <label class="custom-control-label" for="customCheck1">Same as Corporate
+                                                Head
+                                                Quarters</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Address (Line 1)"
+                                            required />
+                                    </div>
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Address (Line 2)"
+                                            required />
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pr-1">
+                                            <div class="d-grp">
+                                                <select name="" id="" class="d-inp" required>
+                                                    <option value="">Lecturer</option>
+                                                    <option value="">Evaluator</option>
+                                                    <option value="">Admin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-1">
+                                            <div class="d-grp">
+                                                <select name="" id="" class="d-inp" required>
+                                                    <option value="">Lecturer</option>
+                                                    <option value="">Evaluator</option>
+                                                    <option value="">Admin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 pr-1">
+                                            <div class="d-grp">
+                                                <input type="text" name="addr" class="d-inp" placeholder="City"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 px-1">
+                                            <div class="d-grp">
+                                                <input type="text" name="addr" class="d-inp" placeholder="District"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pl-1">
+                                            <div class="d-grp">
+                                                <input type="number" name="addr" class="d-inp" placeholder="Zipcode"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pr-1">
+                                            <div class="d-grp">
+                                                <input type="number" name="addr" class="d-inp"
+                                                    placeholder="Phone Number" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-1">
+                                            <div class="d-grp">
+                                                <input type="email" name="addr" class="d-inp" placeholder="Office mail"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-box">
+                        <aside class="profile-side">
+                            <h3 class="profile-side-title">Profile</h3>
+                        </aside>
+                        <div class="profile-data">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="d-grp">
+                                        <textarea name="" rows="6" class="d-inp d-textarea"
+                                            placeholder="Write in brief about the company" required></textarea>
+                                    </div>
+                                    <div class="d-attach">
+                                        <input type="file" class="d-inp" name="attachment" id="attachment" />
+                                        <label for="attachment" class="d-label">Attachment</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-box">
+                        <aside class="profile-side">
+                            <h3 class="profile-side-title">Account Settings</h3>
+                        </aside>
+                        <div class="profile-data">
+                            <h6 class="d-profile-name">Primary Contact</h6>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="First Name" autofocus
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Middle Name"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Last Name" required />
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="text" name="addr" class="d-inp" placeholder="Designation" autofocus
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="number" name="addr" class="d-inp" placeholder="Phone Number"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="email" name="addr" class="d-inp" placeholder="Email" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-box">
+                        <aside class="profile-side">
+                            <h3 class="profile-side-title">Password</h3>
+                        </aside>
+                        <div class="profile-data">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="password" name="addr" class="d-inp"
+                                            placeholder="Choose your login password (Min 8 digits)" autofocus
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="password" name="addr" class="d-inp"
+                                            placeholder="Repeat the password" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grp">
+                                        <input type="password" name="addr" class="d-inp"
+                                            placeholder="Repeat the password" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grp">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="accept" required />
+                            <label class="custom-control-label" for="accept">
+                                I hereby accept the Terms & Conditions of the Platform
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="w-100 text-center">
+                        <button type="submit" class="btn">Save</button>
+                    </div>
+                    <div class="w-100 text-center mt-5">
+                        <button type="button" class="btn" data-toggle="modal"
+                        data-target="#publishInformation">Published Profile Information modal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="publishInformation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="profile-box mb-0">
+                    <aside class="profile-side">
+                        <h3 class="profile-side-title">Address & Contact</h3>
+                    </aside>
+                    <div class="profile-data">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="reg-label">Corporate Headquarters</h6>
+                                <div class="d-grp">
+                                    <input type="text" name="addr" class="d-inp" placeholder="Address (Line 1)"
+                                        required />
+                                </div>
+                                <div class="d-grp">
+                                    <input type="text" name="addr" class="d-inp" placeholder="Address (Line 2)"
+                                        required />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="d-grp">
+                                            <select name="" id="" class="d-inp" required>
+                                                <option value="">Lecturer</option>
+                                                <option value="">Evaluator</option>
+                                                <option value="">Admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-1">
+                                        <div class="d-grp">
+                                            <select name="" id="" class="d-inp" required>
+                                                <option value="">Lecturer</option>
+                                                <option value="">Evaluator</option>
+                                                <option value="">Admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="d-grp">
+                                            <input type="text" name="addr" class="d-inp" placeholder="City"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 px-1">
+                                        <div class="d-grp">
+                                            <input type="text" name="addr" class="d-inp" placeholder="District"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pl-1">
+                                        <div class="d-grp">
+                                            <input type="number" name="addr" class="d-inp" placeholder="Zipcode"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="d-grp">
+                                            <input type="number" name="addr" class="d-inp"
+                                                placeholder="Phone Number" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-1">
+                                        <div class="d-grp">
+                                            <input type="email" name="addr" class="d-inp" placeholder="Office mail"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <h6 class="reg-label">Corporate Headquarters</h6>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                        <label class="custom-control-label" for="customCheck1">Same as Corporate
+                                            Head
+                                            Quarters</label>
+                                    </div>
+                                </div>
+                                <div class="d-grp">
+                                    <input type="text" name="addr" class="d-inp" placeholder="Address (Line 1)"
+                                        required />
+                                </div>
+                                <div class="d-grp">
+                                    <input type="text" name="addr" class="d-inp" placeholder="Address (Line 2)"
+                                        required />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="d-grp">
+                                            <select name="" id="" class="d-inp" required>
+                                                <option value="">Lecturer</option>
+                                                <option value="">Evaluator</option>
+                                                <option value="">Admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-1">
+                                        <div class="d-grp">
+                                            <select name="" id="" class="d-inp" required>
+                                                <option value="">Lecturer</option>
+                                                <option value="">Evaluator</option>
+                                                <option value="">Admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="d-grp">
+                                            <input type="text" name="addr" class="d-inp" placeholder="City"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 px-1">
+                                        <div class="d-grp">
+                                            <input type="text" name="addr" class="d-inp" placeholder="District"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pl-1">
+                                        <div class="d-grp">
+                                            <input type="number" name="addr" class="d-inp" placeholder="Zipcode"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="d-grp">
+                                            <input type="number" name="addr" class="d-inp"
+                                                placeholder="Phone Number" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-1">
+                                        <div class="d-grp">
+                                            <input type="email" name="addr" class="d-inp" placeholder="Office mail"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-box mb-0">
+                    <aside class="profile-side">
+                        <h3 class="profile-side-title">Profile</h3>
+                    </aside>
+                    <div class="profile-data">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="d-grp">
+                                    <textarea name="" rows="6" class="d-inp d-textarea"
+                                        placeholder="Write in brief about the company" required></textarea>
+                                </div>
+                                <div class="d-attach">
+                                    <input type="file" class="d-inp" name="attachment" id="attachment" />
+                                    <label for="attachment" class="d-label">Attachment</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HIRING CRITERIA -->
+    <div class="modal fade" id="hiringCriteria" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="hiring-modal">
+                    <div class="modal-header hiring-modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new Hiring Criteria</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="hiring-modal-form">
+                        <div class="modal-grp">
+                            <input type="text" name="" class="modal-inp" placeholder="Name of the Hiring Criteria *"
+                                required />
+                        </div>
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <select name="" class="modal-inp" required>
+                                        <option value="">Program</option>
+                                        <option value="">Program</option>
+                                        <option value="">Program</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <select name="" class="modal-inp" required>
+                                        <option value="">Program</option>
+                                        <option value="">Program</option>
+                                        <option value="">Program</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <input type="text" name="" class="modal-inp" placeholder="Cutoff Percentage *"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <select name="" class="modal-inp" required>
+                                        <option value="">Program</option>
+                                        <option value="">Program</option>
+                                        <option value="">Program</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <div class="modal-grp">
+                                            <span>Active Backlogs *</span>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="backlogs1" name="backlogs"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="backlogs1">Yes</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="backlogs2" name="backlogs"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="backlogs2">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="modal-grp">
+                                            <select name="" class="modal-inp" required>
+                                                <option value="">Program</option>
+                                                <option value="">Program</option>
+                                                <option value="">Program</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="modal-grp">
+                                    <span>Educational Gaps if any *</span>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="gaps1" name="gaps" class="custom-control-input">
+                                        <label class="custom-control-label" for="gaps1">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="gaps2" name="gaps" class="custom-control-input">
+                                        <label class="custom-control-label" for="gaps2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="modal-grp">
+                                    <textarea name="" class="modal-inp modal-textarea" rows="8"
+                                        placeholder="Remarks"></textarea>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="gaps gaps-disable">
+                                    <div class="gaps-item">
+                                        <h3 class="gaps-title">GAPS DURING</h3>
+                                        <div class="modal-grp"></div>
+                                    </div>
+                                    <div class="gaps-item">
+                                        <p class="gaps-name">Schooling</p>
+                                        <div class="gaps-content">
+                                            <div class="modal-grp m-0">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Schooling1" name="Schooling"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="Schooling1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Schooling2" name="Schooling"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="Schooling2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-grp">
+                                                <input type="text" name="" class="modal-inp"
+                                                    placeholder="Name of the Hiring Criteria *" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-item">
+                                        <p class="gaps-name">XI - XII</p>
+                                        <div class="gaps-content">
+                                            <div class="modal-grp m-0">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="inter1" name="inter"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="inter1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="inter2" name="inter"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="inter2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-grp">
+                                                <input type="text" name="" class="modal-inp"
+                                                    placeholder="Name of the Hiring Criteria *" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-item">
+                                        <p class="gaps-name">Between XII - Graduation</p>
+                                        <div class="gaps-content">
+                                            <div class="modal-grp m-0">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Between1" name="Between"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="Between1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Between2" name="Between"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="Between2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-grp">
+                                                <input type="text" name="" class="modal-inp"
+                                                    placeholder="Name of the Hiring Criteria *" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-item">
+                                        <p class="gaps-name">During Graduation</p>
+                                        <div class="gaps-content">
+                                            <div class="modal-grp m-0">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Graduation1" name="Graduation"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="Graduation1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Graduation2" name="Graduation"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="Graduation2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-grp">
+                                                <input type="text" name="" class="modal-inp"
+                                                    placeholder="Name of the Hiring Criteria *" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-item">
+                                        <p class="gaps-name">Between Graduation - PG</p>
+                                        <div class="gaps-content">
+                                            <div class="modal-grp m-0">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="pg1" name="pg" class="custom-control-input">
+                                                    <label class="custom-control-label" for="pg1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="pg2" name="pg" class="custom-control-input">
+                                                    <label class="custom-control-label" for="pg2">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-grp">
+                                                <input type="text" name="" class="modal-inp"
+                                                    placeholder="Name of the Hiring Criteria *" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="button" data-dismiss="modal" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIRING CRITERIA DETAILS-->
+    <div class="modal fade" id="hiringCriteriaDetails" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="hiring-modal">
+                    <div class="modal-header hiring-modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hiring Criteria Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="hiring-modal-form">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Name of the Hiring Criteria</label>
+                                    <input type="text" name="" class="modal-inp" value="Hiring Criteria - 2"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Program</label>
+                                    <input type="text" name="" class="modal-inp" value="B.Tech"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Course</label>
+                                    <input type="text" name="" class="modal-inp" value="Computer Science & Engg."
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Cutoff Percentage</label>
+                                    <input type="text" name="" class="modal-inp" value="70%"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Year of Passing</label>
+                                    <input type="text" name="" class="modal-inp" value="2018"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Active Backlogs Allowed</label>
+                                    <input type="text" name="" class="modal-inp" value="Yes - 3 Backlogs"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md px-1">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Education gaps allowed</label>
+                                    <input type="text" name="" class="modal-inp" value="Yes"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md px-1">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">During Schooling</label>
+                                    <input type="text" name="" class="modal-inp" value="No"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md px-1">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Between XII - Grad.</label>
+                                    <input type="text" name="" class="modal-inp" value="Yes - 2 Backlogs"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                            <div class="col-md pl-1">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">During Grad.</label>
+                                    <input type="text" name="" class="modal-inp" value="No"
+                                        placeholder="Name of the Hiring Criteria *" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="modal-grp">
+                                    <label class="inp-caption">Remarks</label>
+                                    <input type="text" name="" class="modal-inp" value="Hiring Criteria - 2"
+                                        value="Remarks related text will be present here"
+                                        placeholder="Remarks related text will be present here" required />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.dropdown-toggle').dropdown()
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/cd7a740979.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
