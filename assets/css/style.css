@@ -24,6 +24,49 @@ a {
     background-color: #253AA3;
 }
 
+.form-control:focus{
+    outline:0px !important; 
+    box-shadow: none !important;
+ }
+
+ .btn-primary {
+    background-color: #253AA3;
+    border-radius: 8px;
+}
+
+.btn-secondary:focus, .btn-primary:focus, .btn-secondary:active, .btn-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #253AA3 !important;
+    color: white !important;
+}
+
+.btn-secondary:hover {
+    background-color: white !important;
+    color: #253AA3 !important;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #253AA3;
+    border-radius: 0px;
+    font-size: .800rem;
+}
+
+p {
+    margin: 0px;
+}
+   
+.bg-grey {
+    background-color: #878BA6;
+}
+
+
+/* Side bar and navigation ---- Start */
 body .main-body .sidebar {
     min-width: 240px;
     max-width: 240px;
@@ -31,6 +74,7 @@ body .main-body .sidebar {
     height: 100vh;
     position: fixed;
     z-index: 1;
+    overflow-y: scroll;
 }
 
 body .main-body .sidebar .logo-section {
@@ -72,7 +116,7 @@ body .main-body .sidebar nav .nav-item {
     align-items: center;
     padding: 10px 30px;
     color: white;
-    font-size: .900rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -80,14 +124,14 @@ body .main-body .sidebar nav .nav-item {
 body .main-body .sidebar nav .active {
     background-color: rgba(255, 255, 255, 0.26);
     border-left: 10px solid white;
-    box-sizing: border-box;
+    padding-left: 20px;
 }
 
 body .main-body .sidebar nav .logout {
     background-color: white;
-    border-radius: 30px;
+    border-radius: 22px;
     color: #253AA3;
-    margin: 10px 40px;
+    margin: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,8 +139,9 @@ body .main-body .sidebar nav .logout {
 
 body .main-body .sidebar nav .logout .label {
     margin: 0px;
-    padding: 6px 0px;
-    font-size: 1.2rem;
+    padding: 3px 0px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 body .main-body .sidebar nav .nav-item .nav-item-container {
@@ -119,15 +164,24 @@ body .main-body .sidebar nav .nav-item-collapsable-parent {
 }
 
 body .main-body .sidebar nav .nav-item-collapsable-child {
-    padding-left: 65px;
-    font-size: .900rem;
+    padding-left: 60px;
+    font-size: .800rem;
     margin-bottom: 0px;
+}
+
+body .main-body .sidebar nav .child-active {
+    background-color: rgba(255, 255, 255, 0.26);
+    border-left: 10px solid white;
+    padding-left: 50px;
 }
 
 body .main-body .sidebar nav .nav-item-collapsable-child .nav-item-container .nav-item-icon{
     margin-right: 10px;
 }
 
+/* Sidebar and navigation ---- End */
+
+/* Main container and top bar ---- Start */
 
 body .main-body .main-container {
     margin-left: 240px;
@@ -161,46 +215,20 @@ body .main-body .main-container .topbar .search {
     max-width: 440px;
     border: 2px solid #9499B71F;
     border-radius: 12px;
-    padding: 8px;
-    background-color: #D9E1E7;
+    padding: 3px;
+    background-color: #ECEFF8;
 }
 
 body .main-body .main-container .topbar .search .form-control {
     border: none;
     background-color: transparent;
+    font-weight: 400;
 }
-
-body .main-body .main-container .topbar .search .form-control:focus{
-    outline:0px !important; 
-    box-shadow: none !important;
- }
 
 body .main-body .main-container .topbar .search .input-group-append .input-group-text {
     background-color: transparent;
     border:none;
-}
-
-body .main-body .main-container .topbar .profile-avatar-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-body .main-body .main-container .topbar .profile-avatar-container .profile-name {
-    margin: 0px;
-    padding-right: 10px;
-}
-
-body .main-body .main-container .topbar .profile-avatar-container .profile-avatar {
-    height: 45px;
-    width: 45px;
-    background-color: #253AA3;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.4rem;
+    font-weight: 200;
 }
 
 .points-btn:focus, .points-btn:active {
@@ -208,33 +236,6 @@ body .main-body .main-container .topbar .profile-avatar-container .profile-avata
     box-shadow: none !important;
   }
 
-.btn-primary {
-    background-color: #253AA3;
-    border-radius: 8px;
-}
-
-.btn-secondary:focus, .btn-primary:focus, .btn-secondary:active, .btn-primary:active {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-.btn-primary:hover {
-    background-color: #253AA3 !important;
-    color: white !important;
-}
-
-.btn-secondary:hover {
-    background-color: white !important;
-    color: #253AA3 !important;
-}
-
-.btn-secondary {
-    background-color: #ffffff;
-    border-radius: 8px;
-    color: #253AA3;
-    border-radius: 0px;
-    font-size: .800rem;
-}
 
 .dropdown-toggle::after {
     display: none !important;
@@ -247,38 +248,13 @@ body .main-body .main-container .topbar .profile-avatar-container .profile-avata
 }
 
 .points-btn .btn-label {
-    font-size: 1rem;
+    font-size: .800rem;
+    padding: 0px 10px;
 }
-
-.points-btn .p-icon-container {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    background-color: white;
-    margin: 0px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.points-btn .p-icon-container .p-icon {
-    color: #253AA3;
-    height: 28px;
-    width: 28px;
-    border: 1px solid #253AA3;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
 
 .points-btn .points {
     font-weight: bold;
-    font-size: 1.4rem;
-}
-
-p {
- margin: 0px;
+    font-size: 1.2rem;
 }
 
 .dropdown-menu-right {
@@ -299,6 +275,7 @@ p {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    padding-top: 40px;
     background-color: #253AA3;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -306,9 +283,19 @@ p {
 }
 
 .points-container .credits-container .label-head {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
     font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.points-container .credits-container .label-body {
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 .points-container .credits-container .credits-body {
@@ -317,64 +304,6 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 12px;
-}
-
-.points-container .credits-container .credits-body .credits-head {
-    font-size: .800rem;
-    font-weight: 200;
-    color: #cacaca;
-}
-
-.points-container .credits-container .credits-body .credits-points {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 8px;
-}
-
-.points-container .credits-container .credits-body .credits-points .credit-points-icon {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
-
-.points-container .credits-container .credits-body .credits-points .credit-points-icon .points-icon {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 1px solid #253AA3;
-    text-align: center;
-    font-size: 1.1rem;
-    color: #253AA3;
-    font-weight: bold;
-}
-
-.points-container .credits-container .credits-body .credits-points .credits-points-label {
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
-}
-
-.points-container .add-credits-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #253AA3;
-    width: 100%;
-    font-size: .900rem;
-    padding: 10px 30px;
-}
-
-.points-container .add-credits-container .label {
-    margin-left: 10px;
-    font-weight: 500;
 }
 
 .credits-table {
@@ -399,8 +328,52 @@ p {
     padding: 10px;
     text-align: center;
     font-weight: bold;
+    font-size: 1rem;
+}
+
+.points-container .add-credits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #253AA3;
+    width: 100%;
+    font-size: .900rem;
+    padding: 10px 30px;
+}
+
+.points-container .add-credits-container .label {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+
+body .main-body .main-container .topbar .profile-avatar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body .main-body .main-container .topbar .profile-avatar-container .profile-name {
+    margin: 0px;
+    padding-right: 10px;
     font-size: .900rem;
 }
+
+body .main-body .main-container .topbar .profile-avatar-container .profile-avatar {
+    height: 40px;
+    width: 40px;
+    background-color: #253AA3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* Main container and top bar ---- End */
+
+/* Main dashboard page ---- Start */
 
 body .main-body .page-body {
     margin-top: 100px;
@@ -411,18 +384,12 @@ body .main-body .page-body .row {
     margin: 12px;
 }
 
+/* Welcome widget ---- Start */
 body .main-body .page-body .welcome-widget {
     border: 1px solid #253AA34D;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-}
-
-body .main-body .page-body .welcome-widget .welcome-btn {
-    margin: 0px 10px;
-    padding: 14px 18px;
-    font-size: .900rem;
-    border-radius: 8px;
 }
 
 .welcome-avatar {
@@ -439,7 +406,7 @@ body .main-body .page-body .welcome-widget .welcome-btn {
 }
 
 .welcome-content {
-    margin-left: 12px;
+    margin-left: 30px;
 }
 
 .welcome-content .title {
@@ -458,24 +425,12 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     color: #2A3050;
     font-size: .900rem;
     letter-spacing: 0.06px;
+    margin-top: 10px;
 }
 
-.welcome-widget .welcome-btns-main {
-    flex:1;
-}
+/* Welcome widget ---- End */
 
-.welcome-widget .welcome-btns {
-    /* width: 31%; */
-    background-color: #253AA3;
-    color: white;
-    text-align: center;
-    font-size: .800rem;
-    height: 50px;
-    padding: 6px 10px;
-    margin: 0px 5px;
-    border-radius: 6px;
-    flex: 1;
-}
+/* Quick widgets --- Start */
 
 .quick-widget {
     border: 1px solid #253AA34D;
@@ -525,14 +480,18 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     font-size: .800rem;
 }
 
-.full-widget {
+/* Quick widgets ---- End */
+
+/* Feature widget ---- Start */
+
+.feature-widget {
     width: 100%;
     border: 1px solid #253AA34D;
     background-color: white;
     border-radius: 5px;
 }
 
-.header, .univ-list-header {
+.feature-widget-header {
     width: 100%;
     background-color: #253AA3;
     padding: 14px 14px;
@@ -540,61 +499,61 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     border-top-right-radius: 5px;
 }
 
-.header .label, .univ-list-header .label {
+.feature-widget-header .label {
     color: white;
-    font-size: .900rem;
+    font-size: 1rem;
     flex: 1;
 }
 
-.univ-list-header .label {
-    text-align: center;
-}
-
-.bg-grey {
-    background-color: #878BA6;
-}
-
-.opacity-03 {
-    opacity: 0.3;
-}
-
-.opacity-04 {
-    opacity: 0.4;
-}
-
-.table-heading {
-    color: #000000;
+.feature-widget .table .table-header {
+    color: #8b8b8b;
     font-weight: bold;
     font-size: .800rem;
 }
 
-.table-passouts-header tr td {
+.feature-widget .table .table-header tr {
+    background-color: rgb(226, 226, 226);
+    padding: 8px;
+}
+
+.feature-widget .table .table-header tr td {
     text-align: center;
 }
 
-.table-passouts-body tr td {
+.feature-widget .table .table-body tr td {
     text-align: center;
     border-bottom: 1px solid #d3d3d3;
-    padding: 8px;
     font-size: .800rem;
+    vertical-align: middle;
 }
 
-.table-passouts-body tr td .table-btn {
+.feature-widget .table .table-body tr td .table-btn {
     background-color: #253AA3;
     padding: 6px 10px;
     width: 100%;
     font-size: .800rem;
     color: white;
     border-radius: 6px;
+    cursor: pointer;
 }
 
-.table-passouts-body tr:last-child td {
-    border-bottom: none;
+.feature-widget .table .table-body tr td:first-child {
+    text-align: left;
+    padding-left: 40px;
 }
+
+.feature-widget .table .table-body tr:last-child td {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+/* Feature widget ---- End */
+
+/* Account info widget ---- Start */
 
 .account-info-widget {
     background-color: #253AA3;
-    padding: 22px;
+    padding: 46px 22px;
     border-radius: 6px;
 }
 
@@ -620,21 +579,31 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     font-weight: bold;
 }
 
-.notifications-widget .header {
-    color: white;
-}
+/* Account info widget ---- End */
 
-.notifications-widget .header .label {
-    margin-left: 12px;
-}
+/* Notifications widget ---- Start */
 
 .notifications-widget {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #253AA34D;
     padding-bottom: 10px;
 }
 
+.notifications-widget .header {
+    color: white;
+    background-color: #253AA3;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 12px 22px;
+    font-size: 1rem;
+}
+
+.notifications-widget .header .label {
+    margin-left: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
 .notification-list .notification-list-item {
     padding: 12.5px 8px; 
@@ -642,7 +611,7 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     border-bottom: 1px solid #253AA34D;
 }
 
-.regular-custom-btn {
+.notification-btn {
     width: 100%;
     background-color: #253AA3;
     color: white;
@@ -661,17 +630,16 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     font-size: 1.4rem;
 }
 
-
 .notification-list .notification-list-item:last-of-type {
     border-bottom: none;
 }
 
 .notification-list .notification-list-item .notification-content {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .notification-list .notification-list-item .notification-content .sub-title {
-    font-size: .680rem;
+    font-size: .700rem;
     flex: 1;
 }
 
@@ -684,6 +652,7 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     font-size: .500rem;
     color: white;
     padding: 1px 2px;
+    margin-left: 5px;
     border-radius: 10px;
 }
 
@@ -692,9 +661,34 @@ body .main-body .page-body .welcome-widget .welcome-btn {
 }
 
 .notification-list .notification-list-item .notification-content .title-with-badge .title {
-    font-size: .720rem;
+    font-size: .760rem;
 }
 
+/* Notifications widget ---- End */
+
+/* University widget ---- Start */
+
+.univ-widget {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #253AA34D;
+    padding-bottom: 10px;
+}
+
+.univ-widget .univ-header {
+    color: white;
+    background-color: #253AA3;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 12px 12px;
+    font-size: 1rem;
+}
+
+.univ-widget .univ-header .label {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
 
 .univ-table {
     padding: 0px 5px; 
@@ -715,6 +709,20 @@ body .main-body .page-body .welcome-widget .welcome-btn {
 .table-universities-body tr:last-child td {
     border-bottom: none;
 }
+
+.univ-btn {
+    width: 100%;
+    background-color: #253AA3;
+    color: white;
+    font-size: .900rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* University widget ---- End */
+
+/* Stat widget stripe ---- Start */
 
 .stat-widget {
     background-color: #253AA3;
@@ -739,12 +747,20 @@ body .main-body .page-body .welcome-widget .welcome-btn {
 }
 
 .stat-widget .stat-content .title {
-    font-size: .900rem;
+    font-size: 1rem;
 }
 
 .stat-widget .stat-content .sub-title {
-    font-size: .900rem;
+    font-size: .800rem;
 }
+
+.stat-widget .stat-content .sub-title-1 {
+    font-size: 1.2rem;
+}
+
+/* Stat widget stripe ---- End */
+
+/* Stat info widget stripe ---- Start */
 
 .stat-info-widget {
     width: 32%;
@@ -782,6 +798,8 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     font-size: 3rem;
     font-weight: bold;
 }
+
+/* Stat info widget stripe ---- End */
 
 .purchase-modal-header {
     border: none;
@@ -893,10 +911,6 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     margin: 0px 10px;
 }
 
-.jobs-list-item .job-list-item-details-container {
-    /* flex: 1; */
-}
-
 .vertical-divider {
     width: 1px;
     background-color: #F5F6FA;
@@ -974,6 +988,10 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     font-size: .900rem;
 }
 
+.job-details-modal .job-details-modal-body .job-details-table .job-details-table-header tr {
+    background-color: rgb(226, 226, 226);
+}
+
 .job-details-modal .job-details-modal-body .job-details-table .job-details-table-header tr td {
     font-size: .900rem;
     font-weight: 400;
@@ -1017,9 +1035,10 @@ body .main-body .page-body .welcome-widget .welcome-btn {
 }
 
 .add-new-jobs-section .add-new-jobs-section-list .add-new-jobs-section-item .sno {
-    font-size: .900rem;
+    font-size: 1rem;
     font-weight: 500;
     margin: 10px;
+    padding: 4px;
 }
 
 .add-new-jobs-section .add-new-jobs-section-list .add-new-jobs-section-item .round-btn {
@@ -1124,6 +1143,9 @@ body .main-body .page-body .welcome-widget .welcome-btn {
     padding: 6px 10px;
 }
 
+.job-publish-modal .job-publish-modal-body .job-publish-table .job-publish-table-header tr {
+    background-color: rgb(226, 226, 226);
+}
 
 .job-publish-modal .job-publish-modal-body .job-publish-table .job-publish-table-header tr td {
     font-size: .900rem;
@@ -1132,4 +1154,23 @@ body .main-body .page-body .welcome-widget .welcome-btn {
 
 .job-publish-modal .job-publish-modal-body .job-publish-table tbody tr td {
     font-size: .900rem;
+}
+
+.publish-selected-btn-container {
+    margin-bottom: 20px;
+}
+.publish-job-checkbox {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+.publish-selected-btn {
+    width: 18%;
+    background-color: #253AA3;
+    color:white;
+    font-size: .900rem;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    border-radius: 6px;   
 }
