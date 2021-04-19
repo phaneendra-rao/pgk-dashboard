@@ -361,6 +361,12 @@
   position: absolute;
 }
 
+.notification-title {
+  color: #878BA6;
+  margin-bottom: 14px;
+  font-family: Poppins-Semibold;
+}
+
 .tb-btn-red {
   background-color: #FE4343 !important;
 }

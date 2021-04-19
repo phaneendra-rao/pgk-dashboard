@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.2">
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="assets/css/inner.css" />
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="logo-section">
+                <img src="./assets/images/logo.png" alt="logo" class="img img-fluid logo">
+                <p class="label">Corporate</p>
+            </div>
+            <nav>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-window"></i>
+                        </span>
+                        <p class="nav-item-label">Dashboard</p>
+                    </div>
+                </a>
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-share-square"></i>
+                        </span>
+                        <p class="nav-item-label">Publish</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item active nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </span>
+                        <p class="nav-item-label">Jobs</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <p class="nav-item-label">Hiring Criteria</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-building"></i>
+                        </span>
+                        <p class="nav-item-label">Profile</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-file"></i>
+                        </span>
+                        <p class="nav-item-label">Information</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <!-- Collapsable parent start -->
+                <a href="#" class="nav-item nav-item-collapsable-parent">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-folders"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribe</p>
+                    </div>
+                    <div class="nav-item-expand">
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                </a>
+                <!-- Collapsable children start -->
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">New Univ.</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item nav-item-collapsable-child">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Subscribed Univ.</p>
+                    </div>
+                </a>
+                <!-- Collapsable children end -->
+                <!-- Collapsable parent end -->
+
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </span>
+                        <p class="nav-item-label">Analytics</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <p class="nav-item-label">Notifications</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-university"></i>
+                        </span>
+                        <p class="nav-item-label">Account</p>
+                    </div>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-item-container">
+                        <span class="nav-item-icon">
+                            <i class="fas fa-comment"></i>
+                        </span>
+                        <p class="nav-item-label">Support</p>
+                    </div>
+                </a>
+
+                <a href="#" class="nav-item logout">
+                    <p class="label">Logout</p>
+                </a>
+            </nav>
+        </div>
+        <div class="main-container">
+            <div class="topbar" style="z-index: 1;">
+                <p class="date">Wednesday, 10th Febraury 2021</p>
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle points-btn" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-offset="0,10">
+                        <p class="btn-label">
+                            Credits
+                        </p>
+                        <span class="p-icon-container">
+                            <p class="p-icon">P</p>
+                        </span>
+                        <p class="points">162</p>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="points-container">
+                            <div class="credits-container">
+                                <p class="label-head">PGK CREDITS</p>
+                                <div class="credits-body">
+                                    <p class="credits-head">Available Balance</p>
+                                    <div class="credits-points">
+                                        <div class="credit-points-icon">
+                                            <p class="points-icon">P</p>
+                                        </div>
+                                        <p class="credits-points-label">162</p>
+                                    </div>
+                                    <table class="credits-table">
+                                        <tbody>
+                                            <tr class="t-row">
+                                                <td class="t-label">Bonus Credits</td>
+                                                <td class="t-value">50</td>
+                                            </tr>
+                                            <tr class="t-row">
+                                                <td class="t-label">Purchased Credits</td>
+                                                <td class="t-value">112</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="add-credits-container" data-toggle="modal" data-target="#exampleModalCenter">
+                                <i class="fas fa-plus-circle"></i>
+                                <p class="label">Add Credits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-avatar-container">
+                    <p class="profile-name">Shalmali</p>
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <h3 class="main-title">Other Information</h3>
+
+                <div class="row m-0">
+                    <div class="col-md-7 p-0">
+                        <div class="table-responsive mb-4">
+                            <table class="table table-data mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="all">
+                                                <label class="custom-control-label mt-1" for="all">
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th scope="col">
+                                            <button class="btn3 btn-lightgreen">Mark as Read</button>
+                                            <button class="btn3 btn-lightgreen" data-toggle="modal"
+                                                data-target="#accept">Delete</button>
+                                        </th>
+                                        <th colspan="2" scope="col">
+                                            <div class="d-flex justify-content-around">
+                                                <div class="d-grp mb-0 mr-1" style="flex: 1;">
+                                                    <select name="" class="d-inp" required>
+                                                        <option value="">Filter All</option>
+                                                        <option value="">Program</option>
+                                                        <option value="">Program</option>
+                                                    </select>
+                                                </div>
+                                                <div class="d-grp mb-0">
+                                                    <select name="" class="d-inp" required>
+                                                        <option value="">Sort by Relevance</option>
+                                                        <option value="">Program</option>
+                                                        <option value="">Program</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label mt-1" for="customCheck1">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="basic-info">
+                                                <div class="basic-img">
+                                                    <p class="basic-name"><i class="fas fa-building"></i></p>
+                                                </div>
+                                                <div class="basic-content">
+                                                    <h5 class="basic-title">Osmania University</h5>
+                                                    <p class="basic-subtitle">has requested for Campus Hiring</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn action tb-btn-red">University</button>
+                                            <button class="btn action tb-btn-yellow">Action required</button>
+                                        </td>
+                                        <td class="time">2 hrs ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label mt-1" for="customCheck1">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="basic-info">
+                                                <div class="basic-img">
+                                                    <p class="basic-name"><i class="fas fa-building"></i></p>
+                                                </div>
+                                                <div class="basic-content">
+                                                    <h5 class="basic-title">Osmania University</h5>
+                                                    <p class="basic-subtitle">has requested for Campus Hiring</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn action tb-btn-green">University</button>
+                                            <button class="btn action tb-btn-grey">Action required</button>
+                                        </td>
+                                        <td class="time">2 hrs ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label mt-1" for="customCheck1">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="basic-info">
+                                                <div class="basic-img">
+                                                    <p class="basic-name"><i class="fas fa-building"></i></p>
+                                                </div>
+                                                <div class="basic-content">
+                                                    <h5 class="basic-title">Osmania University</h5>
+                                                    <p class="basic-subtitle">has requested for Campus Hiring</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn action">University</button>
+                                            <button class="btn action tb-btn-pink">Action required</button>
+                                        </td>
+                                        <td class="time">2 hrs ago</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-5 p-0">
+                        <div class="info">
+                            <h6 class="info-title">
+                                Notification from <br /> Osmania University
+                            </h6>
+                            <hr />
+                            <ul class="info-data">
+                                <li>
+                                    <span>University Name</span>
+                                    <span>OSMANIA UNIVERSITY</span>
+                                </li>
+                                <li>
+                                    <span>Location</span>
+                                    <span>Hyderabad</span>
+                                </li>
+                                <li>
+                                    <span>Year of Establishment</span>
+                                    <span>1917</span>
+                                </li>
+                                <li>
+                                    <span>University ID</span>
+                                    <span>XXXXXXXXX</span>
+                                </li>
+                                <li>
+                                    <span>Accredition</span>
+                                    <span>NAAC 'A'</span>
+                                </li>
+                                <li>
+                                    <span>Type of Request</span>
+                                    <span>Campus Hiring from University</span>
+                                </li>
+                                <li>
+                                    <span>Request made on</span>
+                                    <span>10 - Feb - 2021</span>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-center info-space">
+                                <button class="btn3">View more Info</button>
+                                <button class="btn3 btn-lightgreen" data-toggle="modal"
+                                    data-target="#accept">Accept</button>
+                                <button class="btn3 btn-yellow">Reject</button>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h6 class="info-title">
+                                Notification from <br /> Osmania University
+                            </h6>
+                            <hr />
+                            <ul class="info-data">
+                                <li>
+                                    <span>University Name</span>
+                                    <span>OSMANIA UNIVERSITY</span>
+                                </li>
+                                <li>
+                                    <span>Location</span>
+                                    <span>Hyderabad</span>
+                                </li>
+                                <li>
+                                    <span>Year of Establishment</span>
+                                    <span>1917</span>
+                                </li>
+                                <li>
+                                    <span>University ID</span>
+                                    <span>XXXXXXXXX</span>
+                                </li>
+                                <li>
+                                    <span>Accredition</span>
+                                    <span>NAAC 'A'</span>
+                                </li>
+                                <li>
+                                    <span>Type of Request</span>
+                                    <span>Campus Hiring from University</span>
+                                </li>
+                                <li>
+                                    <span>Request made on</span>
+                                    <span>10 - Feb - 2021</span>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-around info-space">
+                                <button class="btn3">View more Info</button>
+                                <button class="btn3 btn-lightgreen2 txt-lightgreen btn-prevent">Accepted on 10 - Feb -
+                                    2021</button>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h6 class="info-title">
+                                Notification from <br /> Osmania University
+                            </h6>
+                            <hr />
+                            <ul class="info-data">
+                                <li>
+                                    <span>University Name</span>
+                                    <span>OSMANIA UNIVERSITY</span>
+                                </li>
+                                <li>
+                                    <span>Location</span>
+                                    <span>Hyderabad</span>
+                                </li>
+                                <li>
+                                    <span>Year of Establishment</span>
+                                    <span>1917</span>
+                                </li>
+                                <li>
+                                    <span>University ID</span>
+                                    <span>XXXXXXXXX</span>
+                                </li>
+                                <li>
+                                    <span>Accredition</span>
+                                    <span>NAAC 'A'</span>
+                                </li>
+                                <li>
+                                    <span>Type of Request</span>
+                                    <span>Campus Hiring from University</span>
+                                </li>
+                                <li>
+                                    <span>Request made on</span>
+                                    <span>10 - Feb - 2021</span>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-around info-space">
+                                <button class="btn3">View more Info</button>
+                                <button class="btn3 btn-yellow2 txt-yellow btn-prevent">Rejected on 10 - Feb -
+                                    2021</button>
+                            </div>
+
+                            <div class="d-grp">
+                                <label class="rejected-reason">Reason/remarks for rejection</label>
+                                <input type="text" name="" class="d-inp"
+                                    value="University is not matching to Hiring Criteria specified for Job-1" />
+                            </div>
+
+                        </div>
+
+                        <div class="info">
+                            <h6 class="info-title">
+                                Notification from <br /> Vasundhara(Student)
+                            </h6>
+                            <hr />
+                            <ul class="info-data">
+                                <li>
+                                    <span>Student Name</span>
+                                    <span>Raju</span>
+                                </li>
+                                <li>
+                                    <span>Program</span>
+                                    <span>B.Tech</span>
+                                </li>
+                                <li>
+                                    <span>Course</span>
+                                    <span>ECE</span>
+                                </li>
+                                <li>
+                                    <span>University</span>
+                                    <span>University</span>
+                                </li>
+                                <li>
+                                    <span>Aggregate CGPA</span>
+                                    <span>8.1</span>
+                                </li>
+                                <li>
+                                    <span>Applied for </span>
+                                    <span>Campus</span>
+                                </li>
+                                <li>
+                                    <span>Applied on</span>
+                                    <span>10 - Feb - 2021</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="accept" tabindex="-1" role="dialog" aria-labelledby="informationTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="hiring-modal">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-success">
+                        <div class="modal-icon">
+                            <i class="fas fa-check txt-lightgreen"></i>
+                        </div>
+                        <p class="modal-success-txt">You have successfully accepted the hiring request of</p>
+
+                        <div class="modal-university-box">
+                            <span><i class="fas fa-building"></i></span>
+                            Osmania University
+                        </div>
+
+                        <div class="modal-icon btn-yellow2">
+                            <i class="fas fa-times txt-yellow"></i>
+                        </div>
+                        <p class="modal-success-txt">You have rejected the hiring request of</p>
+                        <div class="modal-university-box">
+                            <span><i class="fas fa-building"></i></span>
+                            Osmania University
+                        </div>
+                        <form>
+                            <div class="d-grp">
+                                <textarea name="" rows="6" class="d-inp d-textarea"
+                                    placeholder="Specify the reason/remarks for rejection" required></textarea>
+                            </div>
+                            <div class="w-100 text-center">
+                                <button type="reset" class="btn2 tb-btn-grey">Cancel</button>
+                                <button type="submit" class="btn2 ">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.dropdown-toggle').dropdown()
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/cd7a740979.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
