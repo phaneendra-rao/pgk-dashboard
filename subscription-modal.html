@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Modals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css?v=1.2">
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <link rel="stylesheet" href="assets/css/inner.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container  my-3">
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      subscription modal
+    </button>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered subscription-modal" style="max-width: 700px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <label class="modal-title">
+              <i class="far fa-folder-open"></i>
+              <span>Subscription</span>
+            </label>
+            <i class="far fa-times-circle close-icon" data-dismiss="modal"></i>
+          </div>
+          <div class="modal-body">
+            <div class="card ">
+              <span>Subscription Cost to access</span>
+              <li class="inner-list"><span>Osmania University Insights</span> </li>
+              <div class="tokens float-right">
+                45 Tokens
+              </div>
+            </div>
+            <div class="card ">
+              <span>Available Tokens in the Wallet</span>
+              <div class="tokens">
+                152 Tokens
+              </div>
+            </div>
+            <div class="card">
+              <span>Additional Tokens required</span>
+              <div class="tokens">
+                0 Tokens
+              </div>
+            </div>
+            <div class="buttons text-center mt-5">
+              <button class="btn3">Complete Subscription</button>
+              <button class="tb-btn-grey btn3">+ Add Tokens</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container  my-3">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subSuccess">
+      subscribe succes modal
+    </button>
+    <!-- The Modal -->
+    <div class="modal fade" id="subSuccess">
+      <div class="modal-dialog modal-dialog-centered subscribe-success-modal" style="max-width: 600px;">
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <i class="far fa-times-circle close-icon" data-dismiss="modal"></i>
+            <div class="folder-blc">
+              <span class="circle">
+                <i class="far fa-folder-open"></i>
+              </span>
+            </div>
+            <label class="sub-lbl">Subscription</label>
+            <span class="sub-msg my-3 px-4">
+              Your have successfully subscribed to access the University Insights of
+            </span>
+            <div class="card">
+              <div class="d-flex">
+                <span class="square">
+                  <i class="fas fa-university"></i>
+                </span>
+                <div class="university">
+                  <span class="name d-block">
+                    Osmania University
+                  </span>
+                  <span class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Amberpet, Hyderabad
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer mt-5">
+            <a>Access the Information</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-3 ">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mailModal">
+      mail modal
+    </button>
+
+    <!-- mail Modal -->
+    <div class="modal fade" id="mailModal">
+      <div class="modal-dialog modal-dialog-centered mail-modal" style="max-width: 990px;">
+        <div class="modal-content">
+          <div class="modal-header d-block">
+            <span class="modal-title">New mail to Osmania University requesting Campus Placement Drive</span>
+            <i class="far fa-times-circle close-icon" data-dismiss="modal"></i>
+          </div>
+
+          <div class="modal-body">
+            <div class="card">
+              <span class="control-label">From&nbsp;:</span>
+              <input type="text" value="shalmalia.a@pgktechnolgies.com">
+            </div>
+            <div class="card">
+              <span class="control-label">To&nbsp;:</span>
+              <input type="text">
+            </div>
+            <div class="card">
+              <span class="control-label">Subject&nbsp;:</span>
+              <input type="text">
+            </div>
+            <div class="card b-none">
+              <textarea>
+
+              </textarea>
+            </div>
+            <div class="card ">
+              <div class="attachment">
+                <i class="fas fa-paperclip"></i>
+                <span>Selected Students list for Campus Hiring (Attachment)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn3 " data-dismiss="modal">Send</button>&nbsp;
+            <button type="button" class="btn3 " data-dismiss="modal">Cancel</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ---------------View insights Modal start------------- -->
+  <div class="container">
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#viewInsight">
+      viewInsight
+    </button>
+    <!-- The Modal -->
+    <div class="modal fade viewInsight-modal" id="viewInsight">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 900px;">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">View Insights of 'Osmania University'</h4>
+            <i class="far fa-times-circle close-icon" data-dismiss="modal"></i>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-4">
+                <div class="modal-grp">
+                  <label class="inp-caption">Average CGPA recorded last year</label>
+                  <input type="text" name="" class="modal-inp" value="7.5"
+                    placeholder="Average CGPA recorded last year *" required readonly />
+                </div>
+              </div>
+              <div class="col-4 p-0">
+                <div class="modal-grp">
+                  <label class="inp-caption">Highest CGPA recorded last year</label>
+                  <input type="text" name="" class="modal-inp" value="9.8"
+                    placeholder="Highest CGPA recorded last year *" required readonly />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="modal-grp">
+                  <label class="inp-caption">Highest Package received during last CH</label>
+                  <input type="text" name="" class="modal-inp" value="18Lper annum"
+                    placeholder="Highest Package received during last CH *" required readonly />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="modal-grp">
+                      <label class="inp-caption">Top Skills offered by this University</label>
+                      <div class="modal-inp inp-textarea" value="7.5">
+                        <ul>
+                          <li>Java</li>
+                          <li>Blockchain</li>
+                          <li>Python</li>
+                          <li>C++</li>
+                          <li>Oracle</li>
+                          <li>Business Marketing</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 p-0">
+                    <div class="modal-grp">
+                      <label class="inp-caption">Top Recruiting Corporates Last year</label>
+                      <div class="modal-inp inp-textarea">
+                        <ul>
+                          <li>Cognizant (310 recruited)</li>
+                          <li>TCS (285 recruited)</li>
+                          <li>Infosys (251 recruited)</li>
+                          <li>Wipro (175 recruited)</li>
+                          <li>Accenture (148 recruited)</li>
+                          <li>Tech Mahindra (124 recruited)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-12 p-0">
+                  <div class="modal-grp">
+                    <label class="inp-caption">Average Package received during last CH</label>
+                    <input type="text" name="" class="modal-inp" value="Hiring Criteria - 2"
+                      placeholder="Average Package received during last CH *" required />
+                  </div>
+                </div>
+                <div class="col-12 p-0">
+                  <div class="modal-grp">
+                    <label class="inp-caption">University Conversion Rate Last year</label>
+                    <input type="text" name="" class="modal-inp" value="Hiring Criteria - 2"
+                      placeholder="Average CGPA recorded last year *" required />
+                  </div>
+                </div>
+                <div class="col-12 p-0">
+                  <div class="modal-grp">
+                    <label class="inp-caption">Tentative Passing Month</label>
+                    <input type="text" name="" class="modal-inp" value="Hiring Criteria - 2"
+                      placeholder="Average CGPA recorded last year *" required />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ---------------mail sent successfully Modal start------------- -->
+  <div class="container my-3">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mailSentSuccess">
+      Mail sent successfully
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade mail-sent-success" id="mailSentSuccess">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="far fa-times-circle close-icon" data-dismiss="modal"></i>
+            <div class="circle-block">
+              <div class="circle">
+                <i class="far fa-check"></i>
+              </div>
+            </div>
+            <span class="mail-sent py-2">Mail sent successfully to</span>
+            <div class="d-flex justify-content-center pb-3">
+              <div class="card">
+                <span class="square">
+                  <i class="fas fa-university"></i>
+                </span>
+                <span class="univ-name">
+                  Osmania University
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------mail sent successfully Modal end------------- -->
+</body>
+
+</html>
