@@ -73,7 +73,25 @@
                 </div>
                 <div class="col-md-12">
                     <div class="list">
-                        <h5 class="text-center">"flash text will appears here"</h5>
+                        <!-- <h5 class="text-center">"flash text will appears here"</h5> -->
+                        <h5 class="text-center" id="text"></h5>
+                        <script>
+                            var a = [
+                                "Flash text 1",
+                                "Flash text 2",
+                                "Flash text 3",
+                                "Flash text 4",
+                                "Flash text 5"
+                            ];
+
+                            (function update(idx) {
+
+                                $("#text").html(`"${a[idx]}"`);
+                                setTimeout(update, 1500, ((++idx) % a.length));
+
+                            })(0);
+
+                        </script>
                         <ul>
                             <li>India's FIRST Blockchain enabled campus hire
                                 platform.</li>
