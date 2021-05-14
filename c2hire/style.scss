@@ -1,0 +1,325 @@
+$Primary-Color: #253aa3;
+p {
+  margin: 0;
+}
+body {
+  background-color: #f7f8fc;
+  overflow-x: hidden;
+}
+.navbar {
+  position: relative;
+  background-color: $Primary-Color;
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: #ffffff;
+  }
+  .nav-item {
+    .nav-link {
+      color: #ffffff;
+    }
+    .dropdown {
+      cursor: pointer;
+    }
+  }
+  .navbar-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+//buttons starts
+.btn {
+  display: inline-block;
+  background-color: $Primary-Color;
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  padding: 6px 12px;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px rgba(7, 79, 223, 0.329);
+  }
+}
+.message-btn {
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  padding: 14px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.form-btns {
+  background-color: #ffffff;
+  width: 100px;
+  color: #000000;
+  border-radius: 6px;
+  margin-right: 5px;
+  padding: 6px;
+  text-align: center;
+  &:hover {
+    color: #000000;
+    box-shadow: 0px 4px 15px rgba(201, 206, 218, 0.329);
+  }
+}
+//buttons ends
+.img-cycle-prop {
+  .collab {
+    width: 220px;
+    margin: 1.5rem;
+    border-bottom: 30px solid #eceff8;
+    line-height: 1;
+    font-size: 2.3rem;
+  }
+  .list {
+    background-color: #eceff8;
+    padding: 20px;
+    float: left;
+    ul li {
+      font-size: 1.2rem;
+    }
+  }
+  .cycle-img {
+    padding: 1rem;
+  }
+}
+.reviewComments {
+  margin: 5rem 0;
+  .carousel {
+    .carousel-indicators {
+      bottom: -45px;
+      li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #d3d3d3;
+      }
+      .active {
+        background-color: #00000050;
+      }
+    }
+  }
+}
+.corporates-slides {
+  margin: 5rem 0;
+  .carousel-control-prev {
+    left: -118px;
+    z-index: 1000;
+    color: #00000032;
+    font-size: 30px;
+    opacity: 1;
+    background: #ffffff;
+  }
+  .carousel-control-next {
+    right: -118px;
+    z-index: 1000;
+    color: #00000032;
+    font-size: 30px;
+    opacity: 1;
+    background: #ffffff;
+  }
+}
+.stats-detail {
+  padding: 0 5rem !important;
+  .stats-detail-block {
+    border-radius: 10px;
+    background-color: $Primary-Color;
+    padding: 24px;
+    display: block;
+    width: 100%;
+    .icon {
+      font-size: 4rem;
+      text-align: center;
+      color: #ffffff;
+    }
+    .value {
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+    .text {
+      color: #ffffff;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+.CUS_Stats-block {
+  margin-bottom: 5rem;
+  .stat-info-widget {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 24px;
+    border: 1px solid #d3d3d3;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    .stat-icons {
+      position: absolute;
+      right: -28px;
+      bottom: -18px;
+      color: #ffffff;
+      opacity: 0.5;
+      font-size: 8.5rem;
+    }
+    .stat-info-content {
+      text-transform: uppercase;
+      color: white;
+      .title {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      .sub-title {
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-size: 0.8rem;
+      }
+      .stat-info-no {
+        line-height: 1.2;
+        font-size: 4rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .corp-rad {
+    background: transparent linear-gradient(91deg, #f68b10 0%, #f44e7f 100%) 0%
+      0% no-repeat padding-box !important;
+  }
+  .univ-rad {
+    background: transparent linear-gradient(91deg, #8310f6 0%, #12b8d3 100%) 0%
+      0% no-repeat padding-box !important;
+  }
+  .stud-rad {
+    background: transparent linear-gradient(91deg, #f610e1 0%, #7b0beb 100%) 0%
+      0% no-repeat padding-box !important;
+  }
+}
+.main-titles {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+.Stats {
+  padding: 0 9rem;
+  .stat-widget {
+    padding: 5px 10px;
+    margin-bottom: 1rem;
+    background-color: $Primary-Color;
+    min-height: 60px;
+    border-right: 1px solid white;
+    &:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    &:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .statNo {
+      color: white;
+      padding: 0 10px;
+      float: left;
+      margin-right: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .stat-content {
+      margin-left: 20px;
+      color: white;
+      text-transform: uppercase;
+      .title {
+        font-size: 0.8rem;
+      }
+      .sub-title {
+        font-size: 0.8rem;
+      }
+      .sub-title-1 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .stat-widget:last-of-type {
+    border-right: none;
+  }
+}
+
+.stat-info-widget .stat-info-content {
+  text-transform: uppercase;
+  color: white;
+}
+.commnets-detail {
+  .comments-detail-block {
+    position: relative;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    .quote-icon {
+      position: absolute;
+      color: #000000;
+      font-size: 3rem;
+      left: 40px;
+      opacity: 0.1;
+    }
+    .circle {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      text-align: center;
+      background-color: $Primary-Color;
+    }
+    .title {
+      font-size: 1rem;
+    }
+    .title2 {
+      font-size: 0.8rem;
+    }
+    .message {
+      text-align: center;
+    }
+  }
+}
+
+.footer-block {
+  padding: 1px;
+  background-color: #ffffff;
+  .address-details {
+    h1 {
+      color: $Primary-Color;
+      font-size: 3rem;
+    }
+    p {
+      opacity: 0.66;
+      color: #000000;
+    }
+  }
+  .copyright-text {
+    display: flex;
+    color: #000000;
+    opacity: 0.66;
+    align-items: flex-end;
+  }
+  .socials {
+    display: block;
+    width: 100%;
+    color: #000000;
+    opacity: 0.66;
+  }
+  .policy-links a {
+    text-decoration: none;
+    width: 100%;
+    color: #000000;
+    opacity: 0.8;
+  }
+}
