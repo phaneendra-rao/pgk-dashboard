@@ -18,117 +18,127 @@
 
     <!-------- header nav starts------- -->
     <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="#">C2Hire.</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="home-page.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <div class="dropdown">
-                    <a class="nav-link" data-toggle="dropdown">About Us</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Why C2Hire</a>
-                        <a class="dropdown-item" href="#">Our Team</a>
-                        <a class="dropdown-item" href="#">Advisors</a>
-                        <a class="dropdown-item" href="#">Mentors</a>
+        <div class="container">
+            <a class="navbar-brand" href="#">C2Hire.</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home-page.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link" data-toggle="dropdown">About Us</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Why C2Hire</a>
+                            <a class="dropdown-item" href="our-team.html">Our Team</a>
+                            <a class="dropdown-item" href="#">Advisors</a>
+                            <a class="dropdown-item" href="#">Mentors</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="dropdown">
-                    <a class="nav-link" data-toggle="dropdown">Stakeholders</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Corporate</a>
-                        <a class="dropdown-item" href="#">University</a>
-                        <a class="dropdown-item" href="#">Student</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link" data-toggle="dropdown">Stakeholders</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Corporate</a>
+                            <a class="dropdown-item" href="#">University</a>
+                            <a class="dropdown-item" href="#">Student</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Partners</a>
-            </li>
-            <li class="nav-item">
-                <div class="dropdown">
-                    <a class="nav-link" data-toggle="dropdown">Support</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Contact Us</a>
-                        <a class="dropdown-item" href="#">News</a>
-                        <a class="dropdown-item" href="#">Press</a>
-                        <a class="dropdown-item" href="#">FAQ'S</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link" data-toggle="dropdown">Support</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">Press</a>
+                            <a class="dropdown-item" href="#">FAQ'S</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="form-buttons ml-3">
-                <button class="form-btns btn">Login</button>
-            </li>
-            <li class="form-buttons">
-                <button class="form-btns btn">Sign Up</button>
-            </li>
-        </ul>
-
+                </li>
+                <li class="form-buttons ml-3">
+                    <button class="form-btns btn">Login</button>
+                </li>
+                <li class="form-buttons">
+                    <button class="form-btns btn">Sign Up</button>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-------- header nav ends------- -->
 
     <section class="page-body landing-page">
-        <img class="landing-bg-img2" src="./img/login-img2.png" height="180px" width="220px" alt="">
+        <img class="landing-bg-img2" src="./img/login-img2.png" alt="" height="140px" width="180px">
         <img class="landing-bg-img1" src="./img/Group 2.svg" height="180px" width="180px" alt="">
-        <div class="container">
-            <div class="row img-cycle-prop">
-                <div class="col-md-5 col-sm-12  pr-0">
-                    <div class="col-md-12 pl-3 pr-0">
-                        <p class="collab">Join. Collaborate. Succeed.</p>
-                    </div>
-                    <div class="col-md-12 pr-0">
-                        <div class="list ">
-                            <!-- <h5 class="text-center">"flash text will appears here"</h5> -->
-                            <h5 class="text-center flash" id="text"></h5>
-                            <script>
-                                var a = [
-                                    "Flash text 1",
-                                    "Flash text 2",
-                                    "Flash text 3",
-                                    "Flash text 4",
-                                    "Flash text 5"
-                                ];
+        <div class="img-cycle-prop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12  pr-0">
+                        <div class="col-md-12 pl-3 pr-0">
+                            <p class="collab">Join. Collaborate. Succeed.</p>
+                        </div>
+                        <div class="col-md-12 pr-0">
+                            <div class="list ">
+                                <!-- <h5 class="text-center">"flash text will appears here"</h5> -->
+                                <h5 class="text-center flash" id="text"></h5>
+                                <script>
+                                    var a = [
+                                        "Flash text 1",
+                                        "Flash text 2",
+                                        "Flash text 3",
+                                        "Flash text 4",
+                                        "Flash text 5"
+                                    ];
 
-                                (function update(idx) {
+                                    (function update(idx) {
 
-                                    $("#text").html(`"${a[idx]}"`);
-                                    setTimeout(update, 1500, ((++idx) % a.length));
+                                        $("#text").html(`"${a[idx]}"`);
+                                        setTimeout(update, 1500, ((++idx) % a.length));
 
-                                })(0);
+                                    })(0);
 
-                            </script>
-                            <ul>
-                                <li>India's FIRST Blockchain enabled campus hire
-                                    platform.</li>
-                                <li>A marketplace to collaborateand hire.
-                                </li>
-                                <li>Earn credits as you Register and Publish. </li>
-                                <li>Token Payments.</li>
-                                <li>Futuristic Model : On demand subscription.</li>
-                                <li>Validated and Verified profiles.</li>
-                                <li>In-built analytics engine.</li>
-                            </ul>
+                                </script>
+                                <ul>
+                                    <li>India's FIRST Blockchain enabled campus hire
+                                        platform.</li>
+                                    <li>A marketplace to collaborateand hire.
+                                    </li>
+                                    <li>Earn credits as you Register and Publish. </li>
+                                    <li>Token Payments.</li>
+                                    <li>Futuristic Model : On demand subscription.</li>
+                                    <li>Validated and Verified profiles.</li>
+                                    <li>In-built analytics engine.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-7 col-sm-12 cycle-img pl-0">
-                    <img src="./img/C2Hire_Image.png" width="98%" height="90%" alt="">
+                    <div class="col-md-7 col-sm-12 cycle-img pl-0">
+                        <img src="./img/C2Hire_Image.png" width="98%" height="90%" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="col-12 mt-5">
-                <!-- <video width="100%" height="100%" autoplay loop>
-                        <source src="" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video> -->
-                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/SMKPKGW083c"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+        </div>
 
-            <div class="reviewComments">
+        <div class="container">
+
+            <div class="row video-section justify-content-center">
+                <div class="col-md-8 col-sm-12 mt-5">
+                    <!-- <video width="100%" height="100%" autoplay loop>
+                            <source src="" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video> -->
+                    <iframe width="100%" height="380px" src="https://www.youtube.com/embed/SMKPKGW083c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="reviewComments">
+            <div class="container">
                 <img class="ellipse-square" src="./img/ellipse-square.svg" height="300px" width="300px" alt="">
                 <h5 class="main-titles text-center">HEAR FROM THE PEOPLE</h5>
                 <div id="demo" class="carousel slide" data-ride="carousel">
@@ -308,46 +318,42 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
-            </div>
-            <div class="corporates-slides">
-                <h5 class="main-titles text-center">Happy Corporates & Universities Partnered With Us</h5>
-                <div id="demo" class="carousel slide" data-ride="carousel">
+                <div class="corporates-slides">
+                    <h5 class="main-titles text-center">Happy Corporates & Universities Partnered With Us</h5>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
 
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                    </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row commnets-detail">
+                                    <img width="100%" src="./img/Capture.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row commnets-detail">
+                                    <img width="100%" src="./img/Capture.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row commnets-detail">
+                                    <img width="100%" src="./img/Capture.PNG" alt="">
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row commnets-detail">
-                                <img width="100%" src="./img/Capture.PNG" alt="">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row commnets-detail">
-                                <img width="100%" src="./img/Capture.PNG" alt="">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row commnets-detail">
-                                <img width="100%" src="./img/Capture.PNG" alt="">
-                            </div>
-                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
                     </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <i class="fas fa-angle-left"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <i class="fas fa-angle-right"></i>
-                    </a>
                 </div>
             </div>
+        </div>
+        <div class="container">
+
 
             <div class="col-12 text-center">
                 <h5 class="main-titles">CURRENT STATS</h5>

@@ -5,16 +5,17 @@ p {
   margin: 0;
 }
 body {
-  background-color: #f8f9fd;
+  background-color: #ffffff;
   overflow-x: hidden;
   /* width */
 }
 .navbar {
-  position: relative;
   background-color: $Primary-Color;
+  .container {
+    position: relative;
+  }
   .navbar-brand {
     font-size: 2.5rem;
-    margin-left: 2rem;
     color: #ffffff;
   }
   .nav-item {
@@ -51,8 +52,8 @@ body {
   }
 }
 .page-body {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .landing-bg-img1 {
   position: absolute;
@@ -68,7 +69,12 @@ body {
 }
 .ellipse-square {
   position: absolute;
-  left: 30px;
+  margin-left: -15px;
+}
+.main-title {
+  text-align: center;
+  font-weight: 600;
+  color: $Primary-Color;
 }
 //buttons starts
 .btn {
@@ -119,6 +125,9 @@ body {
 }
 //buttons ends
 .img-cycle-prop {
+  background-color: #f8f9fd;
+  padding: 3rem 0;
+  margin-top: -3rem;
   .collab {
     width: 260px;
     font-weight: 500;
@@ -131,6 +140,7 @@ body {
   }
   .list {
     background-color: #eceff8;
+    color: #000000;
     padding: 20px 5px;
     ul li {
       font-size: 1rem;
@@ -148,8 +158,12 @@ body {
     }
   }
 }
+.video-section {
+  padding: 0 0 2.5rem 0;
+}
 .reviewComments {
-  margin: 5rem 0;
+  padding: 1rem 0 1rem 0;
+  background-color: #f8f9fd;
   .carousel {
     .carousel-indicators {
       bottom: -45px;
@@ -166,7 +180,7 @@ body {
   }
 }
 .corporates-slides {
-  margin: 5rem 0;
+  margin: 2.5rem 0;
   .carousel-control-prev {
     left: -118px;
     z-index: 1000;
@@ -389,6 +403,54 @@ body {
 
   .padspacing {
     padding: 0 20px;
+  }
+}
+.our-team {
+  background-color: #f8f9fd;
+  hr {
+    width: 80px;
+  }
+  .team_card {
+    // height: 220px;
+    height: auto;
+    width: 80%;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    margin: 0 auto 3rem auto;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    .member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .fa-user-circle {
+        padding-top: 20px;
+        font-size: 120px;
+        color: #9c9c9c;
+      }
+      .name {
+        font-weight: 500;
+        font-size: 20px;
+        padding-top: 10px;
+      }
+      .designation {
+        color: #9c9c9c;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+    .description {
+      // height: 190px;
+      height: auto;
+      padding: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
