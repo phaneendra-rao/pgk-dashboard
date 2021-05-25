@@ -8,64 +8,70 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
 
     <!-------- header nav starts------- -->
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">C2Hire.</a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="home-page.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <a class="nav-link" data-toggle="dropdown">About Us</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Why C2Hire</a>
-                            <a class="dropdown-item" href="our-team.html">Our Team</a>
-                            <a class="dropdown-item" href="#">Advisors</a>
-                            <a class="dropdown-item" href="#">Mentors</a>
+            <a class="navbar-brand" href="home-page.html">C2Hire.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL"
+                aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" data-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Why C2Hire</a>
+                                <a class="dropdown-item" href="our-team.html">Our Team</a>
+                                <a class="dropdown-item" href="#">Advisors</a>
+                                <a class="dropdown-item" href="mentors.html">Mentors</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <a class="nav-link" data-toggle="dropdown">Stakeholders</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Corporate</a>
-                            <a class="dropdown-item" href="#">University</a>
-                            <a class="dropdown-item" href="#">Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" data-toggle="dropdown">Stakeholders</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Corporate</a>
+                                <a class="dropdown-item" href="#">University</a>
+                                <a class="dropdown-item" href="#">Student</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Partners</a>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <a class="nav-link" data-toggle="dropdown">Support</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Contact Us</a>
-                            <a class="dropdown-item" href="#">News</a>
-                            <a class="dropdown-item" href="#">Press</a>
-                            <a class="dropdown-item" href="#">FAQ'S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" data-toggle="dropdown">Support</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Contact Us</a>
+                                <a class="dropdown-item" href="#">News</a>
+                                <a class="dropdown-item" href="#">Press</a>
+                                <a class="dropdown-item" href="FAQS.html">FAQ'S</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="form-buttons ml-3">
-                    <button class="form-btns btn">Login</button>
-                </li>
-                <li class="form-buttons">
-                    <button class="form-btns btn">Sign Up</button>
-                </li>
-            </ul>
+                    </li>
+                    <li class="form-buttons ml-3">
+                        <button class="form-btns btn">Login / Sign Up</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-------- header nav ends------- -->
@@ -76,46 +82,48 @@
         <div class="img-cycle-prop">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-12  pr-0">
-                        <div class="col-md-12 pl-3 pr-0">
+                    <div class="col-lg-5 col-sm-12  ">
+                        <div class="col-lg-12 pl-3 ">
                             <p class="collab">Join. Collaborate. Succeed.</p>
                         </div>
-                        <div class="col-md-12 pr-0">
+                        <div class="col-lg-12 p-0 align-content-center">
                             <div class="list ">
                                 <!-- <h5 class="text-center">"flash text will appears here"</h5> -->
                                 <h5 class="text-center flash" id="text"></h5>
                                 <script>
                                     var a = [
-                                        "Flash text 1",
-                                        "Flash text 2",
-                                        "Flash text 3",
-                                        "Flash text 4",
-                                        "Flash text 5"
+                                        "India's FIRST Blockchain enabled campus hire platform.",
+                                        "A marketplace to collaborateand hire.",
+                                        "Earn credits as you Register and Publish.",
+                                        "Token Payments.",
+                                        "Futuristic Model : On demand subscription.",
+                                        "In-built analytics engine.",
+                                        "Validated and Verified profiles."
                                     ];
 
                                     (function update(idx) {
 
-                                        $("#text").html(`"${a[idx]}"`);
-                                        setTimeout(update, 1500, ((++idx) % a.length));
+                                        $("#text").html(a[idx]);
+                                        setTimeout(update, 2000, ((++idx) % a.length));
 
                                     })(0);
 
                                 </script>
-                                <ul>
-                                    <li>India's FIRST Blockchain enabled campus hire
+                                <!-- <ul>
+                                    <li class="list1">India's FIRST Blockchain enabled campus hire
                                         platform.</li>
-                                    <li>A marketplace to collaborateand hire.
+                                    <li class="list2">A marketplace to collaborateand hire.
                                     </li>
                                     <li>Earn credits as you Register and Publish. </li>
                                     <li>Token Payments.</li>
                                     <li>Futuristic Model : On demand subscription.</li>
                                     <li>Validated and Verified profiles.</li>
                                     <li>In-built analytics engine.</li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7 col-sm-12 cycle-img pl-0">
+                    <div class="col-lg-7 col-sm-12 cycle-img ">
                         <img src="./img/C2Hire_Image.png" width="98%" height="90%" alt="">
                     </div>
                 </div>
@@ -123,14 +131,13 @@
         </div>
 
         <div class="container">
-
             <div class="row video-section justify-content-center">
-                <div class="col-md-8 col-sm-12 mt-5">
+                <div class="col-lg-8 col-sm-12  box">
                     <!-- <video width="100%" height="100%" autoplay loop>
                             <source src="" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> -->
-                    <iframe width="100%" height="380px" src="https://www.youtube.com/embed/SMKPKGW083c"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SMKPKGW083c"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -141,206 +148,146 @@
             <div class="container">
                 <img class="ellipse-square" src="./img/ellipse-square.svg" height="300px" width="300px" alt="">
                 <h5 class="main-titles text-center">HEAR FROM THE PEOPLE</h5>
+                <div class="commnets-detail">
+
+                    <ul id="autoWidth" class="cs-hidden">
+                        <!--1------------------------------>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <div class="d-flex flex-column">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">PAVAN KUMAR</p>
+                                    <p class="text-center title2">sr. data Analyts</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur quasi, explicabo </p>
+                                </div>
+                            </div>
+
+                        </li>
+                        <!--2------------------------------>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <div class="d-flex flex-column">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">VASUNDARA</p>
+                                    <p class="text-center title2">sr. data Analyts</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur quasi, explicabo </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!--3------------------------------>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">PRUDHVI</p>
+                                    <p class="text-center title2">B-TECH</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur quasi, explicabo </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!--4------------------------------>
+                        <li class="item-a">
+                            <div class="comments-detail-block light-slider-box">
+                                <div class="d-flex flex-column">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">VASUNDARA</p>
+                                    <p class="text-center title2">sr. data Analyts</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur quasi, explicabo </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!--5------------------------------>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <div class="d-flex flex-column">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">VASUNDARA</p>
+                                    <p class="text-center title2">sr. data Analyts</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur quasi, explicabo </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!--6------------------------------>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <div class="d-flex flex-column">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">VASUNDARA</p>
+                                    <p class="text-center title2">sr. data Analyts</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur quasi, explicabo </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="corporates-slides">
+                <h5 class="main-titles text-center">Happy Corporates & Universities Partnered With Us</h5>
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                    </ul>
-
                     <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row commnets-detail">
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <div class="d-flex flex-column">
-                                            <i class="fas fa-quote-left quote-icon"></i>
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">VASUNDARA</p>
-                                            <p class="text-center title2">sr. data Analyts</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <div class="d-flex flex-column">
-                                            <i class="fas fa-quote-left quote-icon"></i>
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">PAVAN KUMAR</p>
-                                            <p class="text-center title2">sr. data Analyts</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <i class="fas fa-quote-left quote-icon"></i>
-                                        <div class="d-flex flex-column">
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">PRUDHVI</p>
-                                            <p class="text-center title2">B-TECH</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row commnets-detail">
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <div class="d-flex flex-column">
-                                            <i class="fas fa-quote-left quote-icon"></i>
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">VASUNDARA</p>
-                                            <p class="text-center title2">sr. data Analyts</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <div class="d-flex flex-column">
-                                            <i class="fas fa-quote-left quote-icon"></i>
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">PAVAN KUMAR</p>
-                                            <p class="text-center title2">sr. data Analyts</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <i class="fas fa-quote-left quote-icon"></i>
-                                        <div class="d-flex flex-column">
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">PRUDHVI</p>
-                                            <p class="text-center title2">B-TECH</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row commnets-detail">
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <div class="d-flex flex-column">
-                                            <i class="fas fa-quote-left quote-icon"></i>
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">VASUNDARA</p>
-                                            <p class="text-center title2">sr. data Analyts</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <div class="d-flex flex-column">
-                                            <i class="fas fa-quote-left quote-icon"></i>
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">PAVAN KUMAR</p>
-                                            <p class="text-center title2">sr. data Analyts</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 form-group">
-                                    <div class="comments-detail-block">
-                                        <i class="fas fa-quote-left quote-icon"></i>
-                                        <div class="d-flex flex-column">
-                                            <div class="d-flex justify-content-center">
-                                                <span class="circle"></span>
-                                            </div>
-                                            <p class="text-center title">PRUDHVI</p>
-                                            <p class="text-center title2">B-TECH</p>
-                                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Repudiandae exercitationem maxime excepturi provident? Facere, vel
-                                                tempore
-                                                sapiente, consequatur quasi, explicabo </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="container">
 
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
-                <div class="corporates-slides">
-                    <h5 class="main-titles text-center">Happy Corporates & Universities Partnered With Us</h5>
-                    <div id="demo" class="carousel slide" data-ride="carousel">
-
-                        <!-- The slideshow -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row commnets-detail">
-                                    <img width="100%" src="./img/Capture.PNG" alt="">
+                                    <img width="100%" src="./img/partners.png" alt="">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row commnets-detail">
-                                    <img width="100%" src="./img/Capture.PNG" alt="">
+                                    <img width="100%" src="./img/partners.png" alt="">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row commnets-detail">
-                                    <img width="100%" src="./img/Capture.PNG" alt="">
+                                    <img width="100%" src="./img/partners.png" alt="">
                                 </div>
                             </div>
                         </div>
-
                         <!-- Left and right controls -->
                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
                             <i class="fas fa-angle-left"></i>
@@ -349,6 +296,7 @@
                             <i class="fas fa-angle-right"></i>
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -359,19 +307,19 @@
                 <h5 class="main-titles">CURRENT STATS</h5>
             </div>
             <div class="row Stats">
-                <div class="col-md-4 col-sm-12 stat-widget">
+                <div class="col-lg-4 col-sm-12 stat-widget">
                     <p class="statNo">44,656</p>
                     <div class="d-flex flex-column justify-content-center align-items-center stat-content">
                         <p class="title">Student Registered in The Last week</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 stat-widget">
+                <div class="col-lg-4 col-sm-12 stat-widget">
                     <p class="statNo">82</p>
                     <div class="d-flex flex-column justify-content-center align-items-center stat-content">
                         <p class="title">Candidates Hired In The Last 7 Days</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 stat-widget">
+                <div class="col-lg-4 col-sm-12 stat-widget">
                     <p class="statNo">785</p>
                     <div class="d-flex flex-column justify-content-center align-items-center stat-content">
                         <p class="title">jobs posted in the last 7 days</p>
@@ -379,8 +327,8 @@
                 </div>
             </div>
 
-            <div class="row px-5 stats-detail">
-                <div class="col-md-4 col-sm-12 form-group">
+            <div class="row  stats-detail">
+                <div class="col-lg-4 col-sm-12 form-group">
                     <div class="stats-detail-block">
                         <div class="d-flex flex-column">
                             <i class="fas fa-user-graduate icon"></i>
@@ -389,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 form-group">
+                <div class="col-lg-4 col-sm-12 form-group">
                     <div class="stats-detail-block">
                         <div class="d-flex flex-column">
                             <i class="fas fa-users icon"></i>
@@ -398,7 +346,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 form-group">
+                <div class="col-lg-4 col-sm-12 form-group">
                     <div class="stats-detail-block">
                         <div class="d-flex flex-column">
                             <i class="fas fa-clipboard-list icon"></i>
@@ -409,7 +357,7 @@
                 </div>
             </div>
             <div class="row CUS_Stats-block">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class=" stat-info-widget corp-rad">
                         <div class="d-flex flex-column justify-content-between align-items-start stat-info-content">
                             <p class="title">Corporates</p>
@@ -420,7 +368,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class=" stat-info-widget univ-rad">
                         <div class="d-flex flex-column justify-content-between align-items-start stat-info-content">
                             <p class="title">Universities</p>
@@ -431,7 +379,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class=" stat-info-widget stud-rad">
                         <div class="d-flex flex-column justify-content-between align-items-start stat-info-content">
                             <p class="title">Students</p>
@@ -448,17 +396,17 @@
     <!-- ----footer----- -->
     <footer class="footer-block">
         <div class="container">
-            <div class="row my-5">
-                <div class="col-md-4 col-sm-12 mb-3 address-details">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 mb-3 address-details">
                     <h1>C2 Hire.</h1>
                     <p>ADDRESS</p>
                     <p>Plot no: 32, jayabheri Enclave Phase-2, Gachibowli, Hyderabad-500032</p>
                     <p>
                         <i class="far fa-envelope"></i>&nbsp;
-                        contact@C2Hire.coom
+                        contact@C2Hire.com
                     </p>
                 </div>
-                <div class="col-md-4 px-4 col-sm-12 d-flex align-items-center">
+                <div class="col-lg-4 px-4 col-sm-12 d-flex align-items-center">
                     <div class="socials">
                         <h5 class="text-center">FOLLOW US</h5>
                         <div class=" d-flex justify-content-between">
@@ -475,19 +423,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row my-5">
-                <div class="col-md-7 col-sm-12 copyright-text">
+            <div class="row copyright-box">
+                <div class="col-lg-7 col-sm-12 copyright-text">
                     <span>&copy; 2021 PGK Technologies All Rights Reserved</span>
                 </div>
-                <div class="col-md-5 col-sm-12 text-right">
+                <div class="col-lg-5 col-sm-12 contact-us text-right">
                     <button class="message-btn btn">
                         <i class="far fa-envelope"></i>
                         Send us a message
                     </button>
-                    <div class="d-block policy-links">
-                        <a href="privacy-policy.html" target="blank">Privacy Policy </a>|
-                        <a href="terms-conditions.html" target="blank">Terms & conditions </a>|
-                        <a href="refund-policy.html" target="blank">Refund Policy </a>
+                    <div class=" policy-links">
+                        <a href="privacy-policy.html">Privacy Policy </a>|
+                        <a href="terms-conditions.html">Terms & conditions </a>|
+                        <a href="refund-policy.html">Refund Policy </a>
                     </div>
                 </div>
             </div>
