@@ -593,17 +593,14 @@ hr {
   line-height: 1.2;
 }
 
-.our-team .team-text h2:nth-child(2) {
-  margin-bottom: 2rem;
-}
-
 .our-team .team-text p {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   color: #697671;
 }
 
 .our-team .team-text p:last-child {
   width: 316px;
+  margin-top: 1rem;
 }
 
 .our-team .cards-row .member-list .member-card {
