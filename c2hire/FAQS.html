@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Privacy policy</title>
+    <title>FAQ'S</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -71,51 +71,86 @@
     </nav>
     <section class="page-body">
 
-        <div class="container policy-terms">
-            <div class="policy-heading mt-3 mb-3">
-                <h1>Privacy Policy
-                </h1>
-                <hr>
-            </div>
-            <div class="container policy-paragraphs padspacing">
-                <p>
-                    Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to
-                    understand how we collect, use, communicate and disclose and make use of personal information. The
-                    following outlines our privacy policy.
-                </p>
-                <ul class="policy-listings">
+        <div class="container FAQS-page">
+            <main class="card">
 
-                    <li>Before or at the time of collecting personal information, we will identify the purposes for
-                        which
-                        information is being collected.</li>
-                    <li>We will collect and use of personal information solely with the objective of fulfilling those
-                        purposes specified by us and for other compatible purposes, unless we obtain the consent of the
-                        individual concerned or as required by law.
-                    </li>
-                    <li>We will only retain personal information as long as necessary for the fulfilment of those
-                        purposes.
-                    </li>
-                    <li>We will collect personal information by lawful and fair means and, where appropriate, with the
-                        knowledge or consent of the individual concerned.
-                    </li>
-                    <li>Personal data should be relevant to the purposes for which it is to be used, and, to the extent
-                        necessary for those purposes, should be accurate, complete, and up-to-date.
-                    </li>
-                    <li>
-                        We will protect personal information by reasonable security safeguards against loss or theft, as
-                        well as unauthorized access, disclosure, copying, use or modification.
-                    </li>
-                    <li>We will make readily available to customers information about our policies and practices
-                        relating to
-                        the management of personal information.
-                    </li>
-                </ul>
-                <p>
-                    We are committed to conducting our business in accordance with these principles in order to ensure
-                    that
-                    the confidentiality of personal information is protected and maintained.
-                </p>
-            </div>
+                <h2 class="title">FAQ's</h2>
+
+                <div class="acc-container">
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i> What is the definition of a
+                        will?</button>
+                    <div class="acc-content">
+                        <p>
+                            It is a dead giveaway.
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        What happens to chemists when they die?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            We barium [bury them].
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        Why does the leopard find it difficult to hide and stalk?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            Because he is spotted always.
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        What kind of key opens a banana?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            A monkey. 🙈
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        Where does a tree store it's stuff?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            In it's Trunk.
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        What dog is known for its punctuality?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            The watch-dog 🐕
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        Name a thing that has four wheels and flies?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            The garbage truck, of course.
+                        </p>
+                    </div>
+
+                    <button class="acc-btn"><i class="fas fa-chevron-right"></i>
+                        Why was everyone so tired on the First of April?
+                    </button>
+                    <div class="acc-content">
+                        <p>
+                            Because they had just completed a March of 31 days.
+                        </p>
+                    </div>
+
+                </div>
+            </main>
         </div>
     </section>
     <!-- ----footer----- -->
@@ -166,5 +201,25 @@
             </div>
         </div>
     </footer>
+    <script>
+        const btns = document.querySelectorAll(".acc-btn");
 
+        // fn
+        function accordion() {
+            // this = the btn | icon & bg changed
+            this.classList.toggle("is-open");
+
+            // the acc-content
+            const content = this.nextElementSibling;
+
+            // IF open, close | else open
+            if (content.style.maxHeight) content.style.maxHeight = null;
+            else content.style.maxHeight = content.scrollHeight + "px";
+        }
+
+        // event
+        btns.forEach((el) => el.addEventListener("click", accordion));
+
+
+    </script>
 </body>

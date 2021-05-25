@@ -155,9 +155,16 @@ body {
     background-color: #eceff8;
     overflow: hidden;
     opacity: 0.9;
+    height: 270px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: #000000;
     border-radius: 5px;
-    padding: 20px 5px;
+    padding: 20px 10px;
+    h5 {
+      font-size: 1.2rem;
+    }
     ul {
       padding-left: 2.2rem;
       li {
@@ -410,7 +417,7 @@ hr {
   width: 90px;
   border-style: solid;
   border-bottom-width: 2px;
-  border-color: #d3d3d3;
+  border-color: #3a3636;
   animation: slider 400ms ease-in;
 }
 @keyframes slider {
@@ -466,69 +473,287 @@ hr {
 }
 .our-team {
   background-color: #f8f9fd;
-  .team_card {
-    // height: 220px;
-    height: auto;
-    width: 80%;
-    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
-      0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-    margin: 0 auto 3rem auto;
-    padding: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    .circle {
-      height: 120px;
-      border: 1px solid #d3d3d3;
-      overflow: hidden;
-      width: 120px;
-      justify-content: center;
-      display: flex;
-      border-radius: 50%;
-      img {
-        height: 140px;
-        margin-top: -16px;
+  padding: 4rem 3rem;
+  .team-text {
+    padding: 3rem 0;
+    h2 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin: 0;
+      line-height: 1.2;
+      &:nth-child(2) {
+        margin-bottom: 2rem;
       }
     }
-    .member {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-right: 1px solid #d3d3d3;
-      margin: 16px 0;
-      .fa-user-circle {
-        font-size: 120px;
-        color: #9c9c9c;
-      }
-      .name {
-        font-weight: 500;
-        font-size: 20px;
-        padding-top: 10px;
-      }
-      .designation {
-        color: #9c9c9c;
-        font-size: 16px;
-        text-align: center;
+    p {
+      margin-bottom: 1rem;
+      color: #697671;
+      &:last-child {
+        width: 316px;
       }
     }
-    .description {
-      // height: 190px;
-      height: auto;
-      padding: 10px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-      p {
-        margin-bottom: 1rem;
-        font-size: 14px;
+  }
+  .cards-row {
+    // width: 100% !important;
+    // display: flex;
+    // justify-content: space-evenly;
+    .member-list {
+      .member-card {
+        margin: 0.5rem 1rem;
+        width: 220px;
+        &:hover {
+          .fadeinUp {
+            animation: fadeUp 0.3s forwards;
+            @keyframes fadeUp {
+              0% {
+                transform: translateY(0px);
+              }
+              100% {
+                transform: translateY(-85px);
+              }
+            }
+            .title span {
+              &:nth-child(1) {
+                color: #ffffff;
+              }
+            }
+            .social-btn {
+              display: flex;
+              transform: scale(0.8);
+            }
+          }
+        }
+        .img-box {
+          img {
+            height: 350px;
+            object-fit: cover;
+          }
+          .img-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 348px;
+            width: 220px;
+            background-color: #ffffff;
+            i {
+              font-size: 120px;
+              color: #9c9c9c;
+            }
+          }
+        }
+        .fadeinUp {
+          position: relative;
+        }
+        .title {
+          padding-top: 10px;
+          span {
+            display: block;
+            text-align: center;
+            &:first-child {
+              font-size: 18px;
+              color: $Primary-Color;
+              line-height: 18px;
+              font-weight: bolder;
+            }
+            &:nth-child(2) {
+              color: #9c9c9c;
+              padding-top: 5px;
+              font-size: 14px;
+            }
+          }
+        }
+        .social-btn {
+          display: none;
+          padding: 15px 30px;
+          justify-content: center;
+          align-items: center;
+          background-color: $Primary-Color;
+          border-radius: 50px;
+          a {
+            height: 24px;
+            width: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #ffffff;
+            margin-right: 5px;
+            i {
+              color: $Primary-Color;
+            }
+          }
+        }
       }
-      .read-more {
-        color: $Primary-Color;
-        font-weight: bold;
-        cursor: pointer;
+    }
+  }
+  .description-modal {
+    .modal-dialog {
+      max-width: 980px;
+      .modal-content {
+        color: #ffffff;
+        padding: 1rem;
+        border: none;
+        border-radius: 15px;
+        background-color: #00aee6;
+        background: linear-gradient(45deg, #00aee6, #1d5187);
+        .modal-header {
+          border: none;
+          .close {
+            color: #ffffff;
+          }
+        }
+        .modal-body {
+          p {
+            margin-bottom: 2rem;
+          }
+        }
       }
     }
   }
 }
+.FAQS-page {
+  .card {
+    background: #fff;
+    color: #333;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 30rem;
+    border-radius: 2rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-55%);
+  }
+  .hero .img {
+    filter: drop-shadow(0rem 1.5rem rgba(0, 0, 0, 0.1));
+    transition: 0.3s ease-out;
+  }
+  .card:hover .img {
+    filter: drop-shadow(0rem 2.5rem rgba(0, 0, 0, 0.1));
+  }
+
+  .title {
+    text-align: center;
+    color: $Primary-Color;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .acc-container {
+    padding: 2rem;
+  }
+  .acc-btn {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+  .fa-chevron-right {
+    color: #9c9c9c;
+    margin-right: 15px;
+    transition: all 0.3s linear;
+  }
+  .acc-btn.is-open .fa-chevron-right {
+    transform: rotate(90deg);
+  }
+  .acc-btn:hover,
+  .acc-btn.is-open {
+    color: #000;
+    font-weight: 500;
+  }
+
+  .acc-content {
+    max-height: 0;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding-left: 3rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .credit {
+    text-align: center;
+    padding: 1rem;
+  }
+  .credit a {
+    text-decoration: wavy underline;
+    color: dodgerblue;
+  }
+}
+// .our-team {
+//   background-color: #f8f9fd;
+//   .team_card {
+//     // height: 220px;
+//     height: auto;
+//     width: 80%;
+//     box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+//       0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+//     margin: 0 auto 3rem auto;
+//     padding: 10px;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     .circle {
+//       height: 120px;
+//       border: 1px solid #d3d3d3;
+//       overflow: hidden;
+//       width: 120px;
+//       justify-content: center;
+//       display: flex;
+//       border-radius: 50%;
+//       img {
+//         height: 140px;
+//         margin-top: -16px;
+//       }
+//     }
+//     .member {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       border-right: 1px solid #d3d3d3;
+//       margin: 16px 0;
+//       .fa-user-circle {
+//         font-size: 120px;
+//         color: #9c9c9c;
+//       }
+//       .name {
+//         font-weight: 500;
+//         font-size: 20px;
+//         padding-top: 10px;
+//       }
+//       .designation {
+//         color: #9c9c9c;
+//         font-size: 16px;
+//         text-align: center;
+//       }
+//     }
+//     .description {
+//       // height: 190px;
+//       height: auto;
+//       padding: 10px;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+
+//       p {
+//         margin-bottom: 1rem;
+//         font-size: 14px;
+//       }
+//       .read-more {
+//         color: $Primary-Color;
+//         font-weight: bold;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
 
 .footer-block {
   padding: 4rem;
