@@ -1,0 +1,777 @@
+//color variable
+$Primary-Color: #004fd0;
+
+p {
+  margin: 0;
+}
+
+.primary-color {
+  color: $Primary-Color;
+}
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  /* width */
+}
+.navbar {
+  background-color: $Primary-Color;
+  padding: 0.8rem 1rem;
+  .container {
+    position: relative;
+  }
+  .navbar-toggler {
+    &:focus {
+      border: 1px solid #f4f4f4;
+      outline: none;
+    }
+    .fa-bars {
+      color: #ffffff;
+      font-size: 34px;
+    }
+  }
+  .navbar-brand {
+    font-family: "Euclid Circular A";
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  .nav-item {
+    margin: 0 5px;
+    &:hover {
+      background-color: #ffffff;
+      border-radius: 9px;
+      .nav-link {
+        color: $Primary-Color;
+        font-weight: 500;
+      }
+    }
+    .nav-link {
+      font-family: "Euclid Circular A";
+      color: #ffffff;
+      padding: 10px 20px;
+      font-weight: 500;
+    }
+  }
+  .dropdown {
+    cursor: pointer;
+    .dropdown-menu {
+      font-family: "Euclid Circular A";
+      margin-top: 5px;
+      border: 1px solid #d3d3d3;
+      background-color: #ffffff;
+      // box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      //   0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 3px 6px #00000029;
+      a {
+        &:hover {
+          background-color: $Primary-Color;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.page-body {
+  // padding-top: 3rem;
+  // padding-bottom: 3rem;
+}
+//buttons starts
+.btn {
+  display: inline-block;
+  background-color: $Primary-Color;
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  padding: 6px 12px;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px rgba(7, 79, 223, 0.329);
+  }
+}
+.message-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.9rem;
+  background: #093f98;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  padding: 14px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+.form-btns {
+  font-family: "Euclid Circular A";
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  color: $Primary-Color;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+  text-align: center;
+  &:hover {
+    color: $Primary-Color;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(201, 206, 218, 0.329);
+  }
+}
+//buttons ends
+.landing-page {
+  .landing-bg-img1 {
+    position: absolute;
+    // left: 32%;
+    top: 55px;
+    opacity: 0.8;
+  }
+  .landing-bg-img2 {
+    position: absolute;
+    right: 0px;
+    opacity: 0.8;
+    top: 84px;
+  }
+  .ellipse-square {
+    position: absolute;
+    margin-left: -15px;
+  }
+  .main-title {
+    text-align: center;
+    font-weight: 600;
+    color: $Primary-Color;
+  }
+
+  .showcaseBox {
+    background-color: #f8f9fd;
+    padding: 5rem 0;
+    .highlightText {
+      font-family: "Euclid Circular A";
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 390px;
+      font-weight: 600;
+      color: #404143;
+      margin-left: 4rem;
+      letter-spacing: -0.14px;
+      line-height: 1.1;
+      font-size: 36px;
+    }
+    .vid {
+      padding: 0 2rem;
+      .videoBlock {
+        position: relative;
+        height: 300px;
+        background-color: #e2f3ff;
+        .playBtn {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 120px;
+          width: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          background-color: $Primary-Color;
+          border-radius: 50%;
+          i {
+            font-size: 44px;
+          }
+        }
+      }
+      .vidBtm-text {
+        font-family: "Euclid Circular A";
+        font-weight: 600;
+        margin: 0.5rem 0;
+        color: #404143;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .collab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #b2cefe;
+    span {
+      font-family: "Euclid Circular A";
+      font-weight: 600;
+      font-size: 36px;
+      color: $Primary-Color;
+    }
+  }
+  .homepage-info {
+    background: rgb(216, 222, 226);
+    background: linear-gradient(
+      270deg,
+      rgba(216, 222, 226, 1) 35%,
+      rgba(240, 244, 246, 1) 56%
+    );
+  }
+  .reviewComments {
+    padding: 1rem 0 1rem 0;
+    background-color: #f8f9fd;
+    .carousel {
+      .carousel-indicators {
+        bottom: -45px;
+        li {
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          background-color: #d3d3d3;
+        }
+        .active {
+          background-color: #00000050;
+        }
+      }
+    }
+  }
+  .corporates-slides {
+    margin: 5rem 0 3rem 0;
+    .carousel {
+      background-color: #ffffff;
+    }
+    .container {
+      position: relative;
+    }
+    .carousel-control-prev {
+      width: 30px;
+      color: #00000032;
+      font-size: 30px;
+      opacity: 1;
+      background: #ffffff;
+    }
+    .carousel-control-next {
+      width: 30px;
+      color: #00000032;
+      font-size: 30px;
+      opacity: 1;
+      background: #ffffff;
+    }
+  }
+  .stats-detail {
+    padding: 0 5rem;
+    .stats-detail-block {
+      border-radius: 10px;
+      background-color: #594ee9;
+      padding: 24px;
+      display: block;
+      width: 100%;
+      .icon {
+        font-size: 4rem;
+        text-align: center;
+        color: #ffffff;
+      }
+      .value {
+        font-family: "Euclid Circular A";
+        font-weight: bold;
+        font-style: normal;
+        color: #ffffff;
+        font-size: 1.3rem;
+      }
+      .text {
+        font-family: "Euclid Circular A";
+        font-weight: 500;
+        font-style: normal;
+        color: #ffffff;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .CUS_Stats-block {
+    margin-bottom: 3rem;
+    padding: 0 5rem;
+    .stat-info-widget {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 24px;
+      border: 1px solid #d3d3d3;
+      overflow: hidden;
+      position: relative;
+      border-radius: 5px;
+      .stat-icons {
+        position: absolute;
+        right: -28px;
+        bottom: -18px;
+        color: #ffffff;
+        opacity: 0.5;
+        font-size: 8.5rem;
+      }
+      .stat-info-content {
+        text-transform: uppercase;
+        color: white;
+        .title {
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        .sub-title {
+          font-weight: 400;
+          letter-spacing: 2px;
+          font-size: 0.8rem;
+        }
+        .stat-info-no {
+          line-height: 1;
+          font-size: 4rem;
+          font-weight: bold;
+        }
+      }
+    }
+    .corp-rad {
+      background: transparent linear-gradient(91deg, #f68b10 0%, #f44e7f 100%)
+        0% 0% no-repeat padding-box !important;
+    }
+    .univ-rad {
+      background: transparent linear-gradient(91deg, #8310f6 0%, #12b8d3 100%)
+        0% 0% no-repeat padding-box !important;
+    }
+    .stud-rad {
+      background: transparent linear-gradient(91deg, #f610e1 0%, #7b0beb 100%)
+        0% 0% no-repeat padding-box !important;
+    }
+  }
+  .main-titles {
+    font-family: "Circular Std";
+    font-weight: 900;
+    font-style: normal;
+    margin: 5rem 0 2rem 0;
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #425072;
+    text-transform: uppercase;
+  }
+  .Stats {
+    padding: 0 6rem;
+    .stat-widget {
+      padding: 5px 10px;
+      margin-bottom: 1rem;
+      background-color: $Primary-Color;
+      min-height: 60px;
+      border-right: 1px solid white;
+      &:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      &:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .statNo {
+        font-family: "Circular Std";
+        font-weight: 900;
+        font-style: normal;
+        color: white;
+        text-align: right;
+        width: 40%;
+        padding: 0 10px;
+        float: left;
+        margin-right: 10px;
+        font-size: 2rem;
+      }
+      .stat-content {
+        margin-left: 20px;
+        text-align: left;
+        height: 100%;
+        color: white;
+        text-transform: uppercase;
+        .title {
+          font-family: "Euclid Circular A";
+          font-weight: 500;
+          font-style: normal;
+          font-size: 0.8rem;
+          padding: 5px 0;
+        }
+        .sub-title {
+          font-size: 0.8rem;
+        }
+        .sub-title-1 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .stat-widget:last-of-type {
+      border-right: none;
+    }
+  }
+
+  .stat-info-widget .stat-info-content {
+    text-transform: uppercase;
+    color: white;
+  }
+  .commnets-detail {
+    .comments-detail-block {
+      position: relative;
+      overflow: hidden;
+      max-height: 350px;
+      box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+      padding: 24px;
+      border-radius: 10px;
+      background-color: #ffffff;
+
+      .quote-icon {
+        position: absolute;
+        color: #000000;
+        font-size: 3rem;
+        left: 40px;
+        opacity: 0.1;
+      }
+      .circle {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $Primary-Color;
+      }
+      .title {
+        font-family: "Circular Std";
+        font-weight: bold;
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 18px;
+        color: #425072;
+      }
+      .title2 {
+        font-family: "Circular Std";
+        font-style: normal;
+        line-height: 1;
+        margin-bottom: 15px;
+        color: #425072;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .message {
+        font-family: "Circular Std";
+        font-style: normal;
+        color: #425072;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+    .light-slider-box {
+      width: 350px;
+      height: auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      margin: 15px 10px;
+    }
+  }
+}
+hr {
+  width: 90px;
+  border-style: solid;
+  border-bottom-width: 2px;
+  border-color: #9c9c9c;
+  animation: slider 300ms ease-in;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.footer-block {
+  padding: 0rem;
+  background-color: #2063d7;
+  box-shadow: 0px 3px 50px #00000029;
+  .footer1stblc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    .logo {
+      display: block;
+      font-family: "Euclid Circular A";
+      font-size: 44px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    .address-details {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      padding: 10px 0;
+      width: 80%;
+      border-top: 0.5px solid #f4f4f4ad;
+      border-bottom: 0.5px solid #f4f4f4ad;
+      color: #ffffff;
+      span {
+        color: #fbfdff;
+        font-family: "Euclid Circular A";
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .followUs {
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      &:hover {
+        transform: scale(1.02);
+      }
+      .socials {
+        font-family: "Euclid Circular A";
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        width: 100%;
+        color: #2063d7;
+        .social-text {
+          color: #2063d7;
+          cursor: pointer;
+          margin: 0 10px;
+          letter-spacing: 0.5px;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .copyright-box {
+    width: 100%;
+    background-color: #f8f9fd;
+    .container {
+      display: flex;
+      padding: 1.5rem;
+      justify-content: space-between;
+      align-items: center;
+      .copyright {
+        color: #425072;
+        font-weight: 600;
+      }
+      .policy-links {
+        color: #425072;
+        a {
+          text-decoration: none;
+          width: 100%;
+          color: #425072;
+          font-weight: 600;
+          margin: 0 5px;
+          &:hover {
+            border-bottom: 1px solid #425072;
+          }
+        }
+      }
+    }
+  }
+}
+
+//****media queries for mobile and tablet devices***
+@media screen and (max-width: 1000px) {
+  .navbar {
+    .nav-item {
+      border-bottom: 1px solid #9c9c9c;
+    }
+    .dropdown {
+      .dropdown-menu {
+        background: $Primary-Color;
+        border: none;
+        color: #ffffff;
+        border-radius: 0;
+        box-shadow: none;
+        a {
+          color: #ffffff;
+          opacity: 0.8;
+        }
+      }
+    }
+    .form-buttons {
+      margin-top: 1rem;
+    }
+  }
+  .landing-page {
+    background-color: #f8f9fd;
+    .landing-bg-img1 {
+      height: 100px;
+      width: 100px;
+      top: 85px;
+    }
+    .landing-bg-img2 {
+      height: 100px;
+      width: 120px;
+      right: 0;
+    }
+    .cycle-img {
+      padding: 0 15px;
+      img {
+        position: inherit;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .video-section {
+      .box {
+        height: 214px;
+      }
+    }
+    .reviewComments {
+      padding: 2rem 0;
+      .light-slider-box {
+        width: 300px;
+      }
+    }
+    .Stats {
+      padding: 0 3rem;
+      .stat-widget {
+        border-radius: 10px;
+      }
+    }
+    .stats-detail {
+      padding: 0 2rem;
+    }
+    .CUS_Stats-block {
+      padding: 0 2rem;
+    }
+  }
+  .our-team {
+    .team_card {
+      width: 100%;
+    }
+  }
+  .policy-terms {
+    padding: 0;
+  }
+  .footer-block {
+    padding: 60px 15px 30px 15px;
+    .address-details {
+      margin-bottom: 3rem !important;
+      text-align: center !important;
+    }
+    .copyright-box {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column-reverse;
+      .contact-us {
+        text-align: center !important;
+      }
+      .copyright-text {
+        justify-content: center;
+        margin: 1rem 0;
+      }
+      .policy-links {
+        text-align: center;
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+// @media (min-width: 1900px) {
+//   .container,
+//   .container-lg,
+//   .container-md,
+//   .container-sm,
+//   .container-xl {
+//     max-width: 1340px;
+//   }
+// }
+
+.video-play-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: $Primary-Color;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: $Primary-Color;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+  }
+}
+
+.video-play-button:hover:after {
+  background-color: darken($Primary-Color, 10%);
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 0.66;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
