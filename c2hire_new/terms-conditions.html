@@ -2,19 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>Terms and Conditions</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="./assets/Fonts/circular std/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/Fonts/Euclid/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/lightslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
+
+    <!-------- header nav starts------- -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="home-page.html">C2Hire.</a>
@@ -32,7 +39,7 @@
                             <a class="nav-link" data-toggle="dropdown">About Us</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Why C2Hire</a>
-                                <a class="dropdown-item" href="our-team.html">Our Team</a>
+                                <a class="dropdown-item" href="Team-credential.html">Our Team</a>
                                 <a class="dropdown-item" href="#">Advisors</a>
                                 <a class="dropdown-item" href="#">Mentors</a>
                             </div>
@@ -55,7 +62,7 @@
                         <div class="dropdown">
                             <a class="nav-link" data-toggle="dropdown">Support</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Contact Us</a>
+                                <a class="dropdown-item" href="contactUs.html">Contact Us</a>
                                 <a class="dropdown-item" href="#">News</a>
                                 <a class="dropdown-item" href="#">Press</a>
                                 <a class="dropdown-item" href="FAQS.html">FAQ'S</a>
@@ -69,12 +76,15 @@
             </div>
         </div>
     </nav>
-    <section class="page-body">
+    <!-------- header nav ends------- -->
 
-        <div class="container policy-terms">
-            <div class="policy-heading mt-3 mb-3">
+    <section class="page-body policy-terms">
+        <img class="landing-bg-img2" src="./assets/img/Group 591.svg" alt="" height="240px" width="230px">
+
+        <div class="container">
+            <img class="landing-bg-img1" src="./assets/img/ellipseSquare.svg" height="180px" width="180px" alt="">
+            <div class="policy-heading">
                 <h1>Terms and Conditions</h1>
-                <hr>
             </div>
             <div class="container policy-paragraphs padspacing terms-para">
 
@@ -178,50 +188,49 @@
             </div>
         </div>
     </section>
+
+
     <!-- ----footer----- -->
     <footer class="footer-block">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 mb-3 address-details">
-                    <h1>C2 Hire.</h1>
-                    <p>ADDRESS</p>
-                    <p>Plot no: 32, jayabheri Enclave Phase-2, Gachibowli, Hyderabad-500032</p>
-                    <p>
-                        <i class="far fa-envelope"></i>&nbsp;
-                        contact@C2Hire.com
-                    </p>
+            <div class="footer1stblc">
+                <div class="logo">
+                    C2Hire.
                 </div>
-                <div class="col-lg-4 px-4 col-sm-12 d-flex align-items-center">
+                <p class="address-details">
+                    <span>Plot no 32, Jayabheri Enclave Phase-2, Gachibowli, Hyderabad - 500032.</span>
+                    <span> <i class="far fa-envelope"></i>&nbsp;contact@c2hire.com</span>
+                </p>
+                <div class="col-lg-6 followUs">
                     <div class="socials">
-                        <h5 class="text-center">FOLLOW US</h5>
-                        <div class=" d-flex justify-content-between">
+                        <span>FOLLOW US</span>&nbsp;&nbsp; |
+                        <div class=" d-flex justify-content-evenly">
                             <span class="social-text">
-                                <i class="fab fa-facebook-f"></i> Facebook
+                                <i class="fab fa-facebook-f"></i> &nbsp;Facebook
                             </span>
                             <span class="social-text">
-                                <i class="fab fa-twitter"></i> Twitter
+                                <i class="fab fa-twitter"></i> &nbsp;Twitter
                             </span>
                             <span class="social-text">
-                                <i class="fab fa-youtube"></i> Youtube
+                                <i class="fab fa-youtube"></i> &nbsp;Youtube
                             </span>
                         </div>
                     </div>
                 </div>
+                <button class="message-btn btn">
+                    <i class="far fa-envelope"></i>
+                    Send us a message
+                </button>
             </div>
-            <div class="row copyright-box">
-                <div class="col-lg-7 col-sm-12 copyright-text">
-                    <span>&copy; 2021 PGK Technologies All Rights Reserved</span>
-                </div>
-                <div class="col-lg-5 col-sm-12 text-right">
-                    <button class="message-btn btn">
-                        <i class="far fa-envelope"></i>
-                        Send us a message
-                    </button>
-                    <div class=" policy-links">
-                        <a href="privacy-policy.html">Privacy Policy </a>|
-                        <a href="terms-conditions.html">Terms & conditions </a>|
-                        <a href="refund-policy.html">Refund Policy </a>
-                    </div>
+
+        </div>
+        <div class="copyright-box">
+            <div class="container">
+                <span class="copyright">© 2021 PGK Technologies. All rights reserved.</span>
+                <div class=" policy-links">
+                    <a href="privacy-policy.html">Privacy Policy </a>|
+                    <a href="terms-conditions.html">Terms & conditions </a>|
+                    <a href="refund-policy.html">Refund Policy </a>
                 </div>
             </div>
         </div>
