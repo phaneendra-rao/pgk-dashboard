@@ -12,6 +12,7 @@
     <link href="./assets/Fonts/circular std/stylesheet.css" rel="stylesheet" type="text/css" />
     <link href="./assets/Fonts/Euclid/stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="stylesheet" href="css/moovie.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -39,7 +40,7 @@
                             <a class="nav-link" data-toggle="dropdown">About Us</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Why C2Hire</a>
-                                <a class="dropdown-item" href="our-team.html">Our Team</a>
+                                <a class="dropdown-item" href="Team-credential.html">Our Team</a>
                                 <a class="dropdown-item" href="#">Advisors</a>
                                 <a class="dropdown-item" href="#">Mentors</a>
                             </div>
@@ -79,11 +80,12 @@
     <!-------- header nav ends------- -->
 
     <section class="page-body landing-page">
-        <img class="landing-bg-img2" src="./assets/img/login-img2.png" alt="" height="140px" width="180px">
+        <img class="landing-bg-img2" src="./assets/img/Group 591.svg" alt="" height="240px" width="230px">
         <div class="showcaseBox">
-
+            <img class="bg-img1" src="./assets/img/Rectangle 341.png" alt="" width="80%">
+            <img class="bg-img2" src="./assets/img/Rectangle 342.png" alt="" width="80%">
             <div class="container">
-                <img class="landing-bg-img1" src="./assets/img/Group 2.svg" height="180px" width="180px" alt="">
+                <img class="landing-bg-img1" src="./assets/img/ellipseSquare.svg" height="180px" width="180px" alt="">
                 <div class="row">
                     <div class="col-lg-5 col-sm-12">
                         <p class="highlightText">India's First Blockchain Enabled Campus Hire Platform</p>
@@ -91,14 +93,16 @@
                     <div class="col-lg-7 col-sm-12">
                         <div class="vid">
                             <div class="videoBlock">
-                                <!-- <img src="./img/undraw_Having_fun_re_vj4h.svg" height="260px" width="100%" alt=""
-                                    style="opacity:0.8"> -->
-                                <!-- <button class="playBtn btn">
-                                    <i class="fa fa-play"></i>
-                                </button> -->
-                                <a id="play-video" class="video-play-button" href="#">
-                                    <span></span>
-                                </a>
+                                <div style="width: 560px; height: 300px;">
+                                    <video id="example"
+                                        poster="http://pgktechnologies.com/wp-content/uploads/2020/10/pgk-video.png">
+                                        <source
+                                            src="http://pgktechnologies.com/wp-content/uploads/2020/10/pgkharnes.mp4"
+                                            type="video/mp4">
+
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
                             </div>
                             <p class="vidBtm-text">A marketplace to collaborate and hire.</p>
                         </div>
@@ -110,13 +114,13 @@
             <span>JOIN. COLLABORATE. SUCCEED.</span>
         </div>
         <div class="homepage-info">
-            <div class="container">
-                <img src="./assets/img/Homepage-Infographics.png" height="600px" width="100%" alt="">
+            <div class="container infograph">
+                <img src="./assets/img/Homepage-Infographics.png" alt="homepage-infograph">
             </div>
         </div>
         <div class="reviewComments">
             <div class="container">
-                <img class="ellipse-square" src="./assets/img/ellipse-square.svg" height="300px" width="300px" alt="">
+                <img class="ellipse-square" src="./assets/img/ellipsenew.svg" height="330px" width="330px" alt="">
                 <h5 class="main-titles text-center">HEAR FROM THE PEOPLE</h5>
                 <div class="commnets-detail">
 
@@ -159,6 +163,40 @@
                             </div>
                         </li>
                         <!--3------------------------------>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">PRUDHVI</p>
+                                    <p class="text-center title2">B-TECH</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <!--slider-box-->
+                            <div class="comments-detail-block light-slider-box">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="circle"></span>
+                                    </div>
+                                    <p class="text-center title">PRUDHVI</p>
+                                    <p class="text-center title2">B-TECH</p>
+                                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae exercitationem maxime excepturi provident? Facere, vel
+                                        tempore
+                                        sapiente, consequatur </p>
+                                </div>
+                            </div>
+                        </li>
                         <li class="item-a">
                             <!--slider-box-->
                             <div class="comments-detail-block light-slider-box">
@@ -244,8 +282,9 @@
             <div class="row  stats-detail">
                 <div class="col-lg-4 col-sm-12 form-group">
                     <div class="stats-detail-block">
-                        <div class="d-flex flex-column">
-                            <i class="fas fa-user-graduate icon"></i>
+                        <div class="d-flex flex-column align-items-center">
+                            <!-- <i class="fas fa-user-graduate icon"></i> -->
+                            <img src="./assets/icon/studRegister.svg" height="80px" width="64px" alt="">
                             <p class="text-center value">12,834</p>
                             <p class="text">STUDENTS REGISTERED TILL DATE</p>
                         </div>
@@ -253,8 +292,9 @@
                 </div>
                 <div class="col-lg-4 col-sm-12 form-group">
                     <div class="stats-detail-block">
-                        <div class="d-flex flex-column">
-                            <i class="fas fa-users icon"></i>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="./assets/icon/team.svg" height="80px" width="64px" alt="">
+                            <!-- <i class="fas fa-users icon"></i> -->
                             <p class="text-center value">7,000</p>
                             <p class="text">CANDIDATES GOT HIRED SO FAR</p>
                         </div>
@@ -262,8 +302,9 @@
                 </div>
                 <div class="col-lg-4 col-sm-12 form-group">
                     <div class="stats-detail-block">
-                        <div class="d-flex flex-column">
-                            <i class="fas fa-clipboard-list icon"></i>
+                        <div class="d-flex flex-column align-items-center">
+                            <!-- <i class="fas fa-clipboard-list icon"></i> -->
+                            <img src="./assets/icon/resume.svg" height="80px" width="64px" alt="">
                             <p class="text-center value">1204</p>
                             <p class="text">JOBS POSTED TILL DATE</p>
                         </div>
@@ -310,49 +351,7 @@
     <!-- ----footer----- -->
     <footer class="footer-block">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-lg-4 col-sm-12 mb-3 address-details">
-                    <h1>C2 Hire.</h1>
-                    <p>ADDRESS</p>
-                    <p>Plot no: 32, jayabheri Enclave Phase-2, Gachibowli, Hyderabad-500032</p>
-                    <p>
-                        <i class="far fa-envelope"></i>&nbsp;
-                        contact@C2Hire.com
-                    </p>
-                </div>
-                <div class="col-lg-4 px-4 col-sm-12 d-flex align-items-center">
-                    <div class="socials">
-                        <h5 class="text-center">FOLLOW US</h5>
-                        <div class=" d-flex justify-content-between">
-                            <span class="social-text">
-                                <i class="fab fa-facebook-f"></i> Facebook
-                            </span>
-                            <span class="social-text">
-                                <i class="fab fa-twitter"></i> Twitter
-                            </span>
-                            <span class="social-text">
-                                <i class="fab fa-youtube"></i> Youtube
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="row copyright-box">
-                <div class="col-lg-7 col-sm-12 copyright-text">
-                    <span>&copy; 2021 PGK Technologies All Rights Reserved</span>
-                </div>
-                <div class="col-lg-5 col-sm-12 contact-us text-right">
-                    <button class="message-btn btn">
-                        <i class="far fa-envelope"></i>
-                        Send us a message
-                    </button>
-                    <div class=" policy-links">
-                        <a href="privacy-policy.html">Privacy Policy </a>|
-                        <a href="terms-conditions.html">Terms & conditions </a>|
-                        <a href="refund-policy.html">Refund Policy </a>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="footer1stblc">
                 <div class="logo">
                     C2Hire.
@@ -395,5 +394,24 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/moovie.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var demo1 = new Moovie({
+                selector: "#example",
+                dimensions: {
+                    width: "100%"
+                },
+                config: {
+                    storage: {
+                        captionOffset: false,
+                        playrateSpeed: false,
+                        captionSize: false
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>

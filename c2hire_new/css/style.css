@@ -15,6 +15,7 @@ body {
 .navbar {
   background-color: #004fd0;
   padding: 0.8rem 1rem;
+  z-index: 10;
 }
 
 .navbar .container {
@@ -75,6 +76,39 @@ body {
 .navbar .dropdown .dropdown-menu a:hover {
   background-color: #004fd0;
   color: #ffffff;
+}
+
+.input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-field label {
+  font-family: "Euclid Circular A";
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin: 0;
+}
+
+.input-field input {
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #e0e0e0;
+  height: 35px;
+}
+
+.input-field textarea {
+  outline: none;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  height: 70px;
 }
 
 .btn {
@@ -140,22 +174,27 @@ body {
           box-shadow: 0px 4px 15px rgba(201, 206, 218, 0.329);
 }
 
-.landing-page .landing-bg-img1 {
+.landing-bg-img1 {
   position: absolute;
-  top: 55px;
-  opacity: 0.8;
+  top: 70px;
 }
 
-.landing-page .landing-bg-img2 {
+.landing-bg-img2 {
   position: absolute;
-  right: 0px;
-  opacity: 0.8;
-  top: 84px;
+  right: -46px;
+  z-index: 2;
+  top: 3px;
+}
+
+.landing-page {
+  background-color: #f8f9fd;
+  padding-bottom: 5rem;
 }
 
 .landing-page .ellipse-square {
   position: absolute;
-  margin-left: -15px;
+  margin-left: -80px;
+  margin-top: 30px;
 }
 
 .landing-page .main-title {
@@ -164,9 +203,35 @@ body {
   color: #004fd0;
 }
 
+.landing-page .infograph {
+  text-align: center;
+}
+
+.landing-page .infograph img {
+  width: 90%;
+}
+
 .landing-page .showcaseBox {
   background-color: #f8f9fd;
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
+}
+
+.landing-page .showcaseBox .bg-img1 {
+  position: absolute;
+  left: 54%;
+  width: 55%;
+  top: 160px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.landing-page .showcaseBox .bg-img2 {
+  position: absolute;
+  left: 54%;
+  width: 55%;
+  top: 250px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .landing-page .showcaseBox .highlightText {
@@ -188,12 +253,21 @@ body {
 }
 
 .landing-page .showcaseBox .vid {
-  padding: 0 2rem;
+  padding: 15px 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-page .showcaseBox .vid .videoBlock {
   position: relative;
-  height: 300px;
   background-color: #e2f3ff;
 }
 
@@ -225,7 +299,7 @@ body {
 .landing-page .showcaseBox .vid .vidBtm-text {
   font-family: "Euclid Circular A";
   font-weight: 600;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   color: #404143;
   font-size: 24px;
   width: 100%;
@@ -255,9 +329,7 @@ body {
 }
 
 .landing-page .homepage-info {
-  background: #d8dee2;
-  background: -webkit-gradient(linear, right top, left top, color-stop(35%, #d8dee2), color-stop(56%, #f0f4f6));
-  background: linear-gradient(270deg, #d8dee2 35%, #f0f4f6 56%);
+  padding: 3rem 0;
 }
 
 .landing-page .reviewComments {
@@ -278,6 +350,10 @@ body {
 
 .landing-page .reviewComments .carousel .carousel-indicators .active {
   background-color: #00000050;
+}
+
+.landing-page .reviewComments #autoWidth {
+  height: 300px !important;
 }
 
 .landing-page .corporates-slides {
@@ -344,7 +420,6 @@ body {
 }
 
 .landing-page .CUS_Stats-block {
-  margin-bottom: 3rem;
   padding: 0 5rem;
 }
 
@@ -405,7 +480,7 @@ body {
   font-family: "Circular Std";
   font-weight: 900;
   font-style: normal;
-  margin: 5rem 0 2rem 0;
+  margin: 3rem 0 2rem 0;
   font-size: 26px;
   letter-spacing: 0px;
   color: #425072;
@@ -480,10 +555,17 @@ body {
   color: white;
 }
 
+.landing-page .commnets-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .landing-page .commnets-detail .comments-detail-block {
   position: relative;
-  overflow: hidden;
-  max-height: 350px;
   -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   padding: 24px;
@@ -554,48 +636,7 @@ body {
           justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 15px 10px;
-}
-
-hr {
-  width: 90px;
-  border-style: solid;
-  border-bottom-width: 2px;
-  border-color: #9c9c9c;
-  -webkit-animation: slider 300ms ease-in;
-          animation: slider 300ms ease-in;
-}
-
-@-webkit-keyframes slider {
-  0% {
-    -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slider {
-  0% {
-    -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
+  margin: 5px 10px;
 }
 
 .footer-block {
@@ -726,109 +767,742 @@ hr {
   border-bottom: 1px solid #425072;
 }
 
-@media screen and (max-width: 1000px) {
-  .navbar .nav-item {
-    border-bottom: 1px solid #9c9c9c;
-  }
-  .navbar .dropdown .dropdown-menu {
-    background: #004fd0;
-    border: none;
-    color: #ffffff;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .navbar .dropdown .dropdown-menu a {
-    color: #ffffff;
-    opacity: 0.8;
-  }
-  .navbar .form-buttons {
-    margin-top: 1rem;
-  }
-  .landing-page {
-    background-color: #f8f9fd;
-  }
-  .landing-page .landing-bg-img1 {
-    height: 100px;
-    width: 100px;
-    top: 85px;
-  }
-  .landing-page .landing-bg-img2 {
-    height: 100px;
-    width: 120px;
-    right: 0;
-  }
-  .landing-page .cycle-img {
-    padding: 0 15px;
-  }
-  .landing-page .cycle-img img {
-    position: inherit;
-    width: 100%;
-    height: 100%;
-  }
-  .landing-page .video-section .box {
-    height: 214px;
-  }
-  .landing-page .reviewComments {
-    padding: 2rem 0;
-  }
-  .landing-page .reviewComments .light-slider-box {
-    width: 300px;
-  }
-  .landing-page .Stats {
-    padding: 0 3rem;
-  }
-  .landing-page .Stats .stat-widget {
-    border-radius: 10px;
-  }
-  .landing-page .stats-detail {
-    padding: 0 2rem;
-  }
-  .landing-page .CUS_Stats-block {
-    padding: 0 2rem;
-  }
-  .our-team .team_card {
-    width: 100%;
-  }
-  .policy-terms {
-    padding: 0;
-  }
-  .footer-block {
-    padding: 60px 15px 30px 15px;
-  }
-  .footer-block .address-details {
-    margin-bottom: 3rem !important;
-    text-align: center !important;
-  }
-  .footer-block .copyright-box {
-    margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .footer-block .copyright-box .contact-us {
-    text-align: center !important;
-  }
-  .footer-block .copyright-box .copyright-text {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 1rem 0;
-  }
-  .footer-block .copyright-box .policy-links {
-    text-align: center;
-  }
-  .footer-block .copyright-box .policy-links a {
-    margin: 0;
+.policy-terms {
+  padding: 0 0 2rem 0;
+}
+
+.policy-terms .policy-heading h1 {
+  font-family: "Euclid Circular A";
+  margin: 2.5rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: #004fd0;
+}
+
+.policy-terms .policy-paragraphs {
+  padding: 40px 8rem;
+}
+
+.policy-terms .policy-paragraphs p {
+  font-family: "Euclid Circular A";
+  color: #505252;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.policy-terms .policy-paragraphs ol li {
+  font-family: "Euclid Circular A";
+  color: #505252;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.policy-terms .policy-paragraphs .policy-listings {
+  padding-right: 20px;
+}
+
+.policy-terms .policy-paragraphs label {
+  font-family: "Euclid Circular A";
+  color: #004fd0;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.policy-terms .policy-paragraphs ul li {
+  padding: 5px 0;
+  font-family: "Euclid Circular A";
+  color: #505252;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.policy-terms .policy-paragraphs ol {
+  font-size: 18px;
+}
+
+.policy-terms .terms-para p,
+.policy-terms .discl {
+  margin-bottom: 2rem;
+}
+
+.Team-creds .Team-heading h1 {
+  font-family: "Euclid Circular A";
+  margin: 2.5rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: #004fd0;
+}
+
+.Team-creds .info-container {
+  padding: 0 3rem;
+}
+
+.Team-creds .info-container .left-highlight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Team-creds .info-container .left-highlight .highlight-text {
+  font-family: "Euclid Circular A";
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 26px;
+  color: #004fd0;
+}
+
+.Team-creds .info-container .left-highlight .description,
+.Team-creds .info-container .left-highlight .desc2 {
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+  color: #505252;
+  font-size: 18px;
+}
+
+.Team-creds .info-container .left-highlight .desc2 {
+  width: 430px;
+}
+
+.Team-creds .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0 9rem 0;
+}
+
+.Team-creds .team-container .our-team {
+  width: 327px;
+}
+
+.Team-creds .team-container .our-team .team-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Team-creds .team-container .our-team .team-head span {
+  font-family: Euclid Circular A;
+  font-size: 40px;
+  color: #333333;
+}
+
+.Team-creds .team-container .our-team .team-head span:first-child {
+  font-weight: 400;
+}
+
+.Team-creds .team-container .our-team .team-head span:nth-child(2) {
+  font-weight: bold;
+}
+
+.Team-creds .team-container .our-team hr {
+  width: 80px;
+  margin-top: 0;
+  height: 2px;
+  background-color: #004fd0;
+}
+
+.Team-creds .team-container .our-team .card-carousel {
+  padding: 2rem 0;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card {
+  height: 440px;
+  border: 1px solid #004fd0;
+  width: 320px;
+  position: relative;
+  -webkit-box-shadow: 0px 3px 60px #0000000f;
+          box-shadow: 0px 3px 60px #0000000f;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .name {
+  font-family: "Euclid Circular A";
+  font-weight: 600;
+  text-align: center;
+  color: #004fd0;
+  font-size: 24px;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .designation {
+  font-family: "Euclid Circular A";
+  color: #999999;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem 3rem;
+  width: 100%;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .socials span {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .socials span i {
+  color: #ffffff;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .socials .linkedin {
+  background-color: #0077b5;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .socials .twitter {
+  background-color: #1da1f2;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .socials .facebook {
+  background-color: #4267b2;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .bg-blue {
+  height: 230px;
+  width: 100%;
+  background-color: #004fd0;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .center-bck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .circle {
+  top: 55px;
+  height: 160px;
+  width: 160px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0px 3px 25px #00000017;
+          box-shadow: 0px 3px 25px #00000017;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.Team-creds .team-container .our-team .card-carousel .card .circle img {
+  height: 220px;
+  width: 100%;
+  top: -28px;
+  position: absolute;
+}
+
+.contact-Us .info-container {
+  padding: 3rem 4rem;
+}
+
+.contact-Us .info-container .left-highlight {
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-Us .info-container .left-highlight .text {
+  font-family: "Euclid Circular A";
+  font-weight: bold;
+  font-size: 28px;
+  color: #004fd0;
+}
+
+.contact-Us .info-container .left-highlight .display {
+  font-family: "Euclid Circular A";
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.contact-Us .info-container .left-highlight .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0;
+  background-color: #004fd0;
+  border-radius: 40px;
+}
+
+.contact-Us .info-container .left-highlight .contact-info .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  height: 70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 70px;
+  border-radius: 50%;
+  left: 5px;
+  background: #ffffff;
+  position: absolute;
+}
+
+.contact-Us .info-container .left-highlight .contact-info .circle i,
+.contact-Us .info-container .left-highlight .contact-info .circle img {
+  color: #004fd0;
+  width: 28px;
+  height: 28px;
+}
+
+.contact-Us .info-container .left-highlight .contact-info p {
+  font-family: "Euclid Circular A";
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 332px;
+  position: relative;
+  left: 91px;
+}
+
+.contact-Us .info-container .sendMessageForm .heading {
+  font-family: "Euclid Circular A";
+  font-weight: bold;
+  font-size: 28px;
+  color: #004fd0;
+  padding-bottom: 1.5rem;
+}
+
+.contact-Us .info-container .sendMessageForm .send-form {
+  padding: 3rem 4rem;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.contact-Us .info-container .get-direction {
+  margin: 3rem 0;
+  width: 100%;
+  height: 500px;
+  border: 1px solid #004fd0;
+}
+
+.team-modal .modal-dialog {
+  max-width: 950px;
+}
+
+.team-modal .modal-dialog .modal-content {
+  padding: 2rem 1rem 0rem 1rem;
+}
+
+.team-modal .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description {
+  border: 2px solid #004fd0;
+  position: relative;
+  padding: 4rem 1rem 1rem 1rem;
+  -webkit-box-shadow: 0px 3px 60px #0000000f;
+          box-shadow: 0px 3px 60px #0000000f;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  left: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -64px;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block .circle {
+  overflow: hidden;
+  height: 100%;
+  width: 120px;
+  border: 2px solid #004fd0;
+  border-radius: 50%;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block .circle img {
+  height: 148px;
+  margin-top: -18px;
+  width: 100%;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block .title {
+  padding: 1rem 3rem;
+  background-color: #004fd0;
+  height: 60%;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+  left: -12px;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block .title span {
+  font-family: "Euclid Circular A";
+  color: #ffffff;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block .title span:first-child {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description .title-block .title span:nth-child(2) {
+  font-size: 14px;
+}
+
+.team-modal .modal-dialog .modal-content .modal-body .description p {
+  font-family: "Euclid Circular A";
+  color: #404143;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer .socials span {
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer .socials span i {
+  color: #ffffff;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer .socials .linkedin {
+  background-color: #0077b5;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer .socials .twitter {
+  background-color: #1da1f2;
+}
+
+.team-modal .modal-dialog .modal-content .modal-footer .socials .facebook {
+  background-color: #4267b2;
+}
+
+.FAQs-page .Faqs-container {
+  padding-top: 3rem;
+}
+
+.FAQs-page .Faqs-container .left-links {
+  padding-right: 2rem;
+}
+
+.FAQs-page .Faqs-container .left-links .tab-blue {
+  background-color: #004fd0;
+  opacity: 0.78;
+  color: #ffffff;
+}
+
+.FAQs-page .Faqs-container .left-links .Top-questions {
+  padding-right: 1rem !important;
+}
+
+.FAQs-page .Faqs-container .left-links .Top-questions ul {
+  padding-left: 0px !important;
+}
+
+.FAQs-page .Faqs-container .left-links .Top-questions ul li {
+  padding: 0.6rem 0 !important;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content {
+  padding: 1.5rem 2rem;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content .table-title {
+  font-family: "Euclid Circular A";
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content .email-btn {
+  width: 100%;
+  background-color: #3875da;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content ul {
+  padding-left: 30px;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content ul li {
+  list-style: none;
+  padding: 0.5rem 0;
+  font-family: "Euclid Circular A";
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block {
+  padding: 0 2rem;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box {
+  position: relative;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box .form-control {
+  border: 1px solid #004fd0;
+  border-radius: 0;
+  height: 45px;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box i {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 20px;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box p {
+  font-family: "Euclid Circular A";
+  color: #919191;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump {
+  padding: 2rem 0;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump i {
+  color: #8b8b8b;
+  font-size: 12px;
+  margin: 0px 10px 0 5px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump span {
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump span:first-child {
+  color: #8b8b8b;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump span:nth-child(2) {
+  color: #000000;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .title {
+  position: relative;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .title i {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 18px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .title h1 {
+  font-family: "Euclid Circular A";
+  color: #004fd0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk {
+  padding-top: 1rem;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk ol {
+  padding-left: 20px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk ol li::marker {
+  font-family: "Euclid Circular A";
+  font-weight: bold;
+  color: #434343a6;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list {
+  margin-bottom: 1.5rem;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list span {
+  padding-left: 10px;
+  display: block;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list .question {
+  font-family: "Euclid Circular A";
+  color: #004fd0;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list .answers {
+  font-family: "Euclid Circular A";
+  color: #434343;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .article {
+  height: 80px;
+  width: 100%;
+  background-color: #004fd0;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .article .text {
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .article .likes i {
+  padding: 0 10px;
+}
+
+@media (min-width: 1900px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1340px;
   }
 }
 
-.video-play-button {
-  position: absolute;
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1230px;
+  }
+}
+
+.poster_button {
+  position: absolute !important;
   z-index: 10;
   top: 50%;
   left: 50%;
@@ -844,9 +1518,9 @@ hr {
   padding: 18px 20px 18px 28px;
 }
 
-.video-play-button::before {
+.poster_button::before {
   content: "";
-  position: absolute;
+  position: absolute !important;
   z-index: 0;
   left: 50%;
   top: 50%;
@@ -861,9 +1535,9 @@ hr {
           animation: pulse-border 1500ms ease-out infinite;
 }
 
-.video-play-button::after {
+.poster_button::after {
   content: "";
-  position: absolute;
+  position: absolute !important;
   z-index: 1;
   left: 50%;
   top: 50%;
@@ -878,15 +1552,17 @@ hr {
   transition: all 200ms;
 }
 
-.video-play-button img {
+.poster_button img {
   position: relative;
+  width: 48px !important;
   z-index: 3;
+  top: -10px;
   max-width: 100%;
   width: auto;
   height: auto;
 }
 
-.video-play-button span {
+.poster_button span {
   display: block;
   position: relative;
   z-index: 3;
@@ -897,7 +1573,7 @@ hr {
   border-bottom: 22px solid transparent;
 }
 
-.video-play-button:hover:after {
+.poster_button:hover:after {
   background-color: #003c9d;
 }
 

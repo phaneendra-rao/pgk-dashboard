@@ -13,9 +13,12 @@ body {
   overflow-x: hidden;
   /* width */
 }
+
+// **************navbar*****************
 .navbar {
   background-color: $Primary-Color;
   padding: 0.8rem 1rem;
+  z-index: 10;
   .container {
     position: relative;
   }
@@ -71,10 +74,38 @@ body {
     }
   }
 }
+
 .page-body {
   // padding-top: 3rem;
   // padding-bottom: 3rem;
 }
+
+//input field
+.input-field {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-family: "Euclid Circular A";
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+  }
+  input {
+    outline: none;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+    height: 35px;
+  }
+  textarea {
+    outline: none;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    height: 70px;
+  }
+}
+
 //buttons starts
 .btn {
   display: inline-block;
@@ -130,32 +161,54 @@ body {
   }
 }
 //buttons ends
+.landing-bg-img1 {
+  position: absolute;
+  // left: 32%;
+  top: 70px;
+}
+.landing-bg-img2 {
+  position: absolute;
+  right: -46px;
+  z-index: 2;
+  top: 3px;
+}
+// *********Landing page stars*********
 .landing-page {
-  .landing-bg-img1 {
-    position: absolute;
-    // left: 32%;
-    top: 55px;
-    opacity: 0.8;
-  }
-  .landing-bg-img2 {
-    position: absolute;
-    right: 0px;
-    opacity: 0.8;
-    top: 84px;
-  }
+  background-color: #f8f9fd;
+  padding-bottom: 5rem;
   .ellipse-square {
     position: absolute;
-    margin-left: -15px;
+    margin-left: -80px;
+    margin-top: 30px;
   }
   .main-title {
     text-align: center;
     font-weight: 600;
     color: $Primary-Color;
   }
-
+  .infograph {
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
   .showcaseBox {
     background-color: #f8f9fd;
-    padding: 5rem 0;
+    padding: 5rem 0 2rem 0;
+    .bg-img1 {
+      position: absolute;
+      left: 54%;
+      width: 55%;
+      top: 160px;
+      transform: translateX(-50%);
+    }
+    .bg-img2 {
+      position: absolute;
+      left: 54%;
+      width: 55%;
+      top: 250px;
+      transform: translateX(-50%);
+    }
     .highlightText {
       font-family: "Euclid Circular A";
       height: 100%;
@@ -170,10 +223,12 @@ body {
       font-size: 36px;
     }
     .vid {
-      padding: 0 2rem;
+      padding: 15px 2rem;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
       .videoBlock {
         position: relative;
-        height: 300px;
         background-color: #e2f3ff;
         .playBtn {
           left: 50%;
@@ -195,7 +250,7 @@ body {
       .vidBtm-text {
         font-family: "Euclid Circular A";
         font-weight: 600;
-        margin: 0.5rem 0;
+        margin: 1rem 0;
         color: #404143;
         font-size: 24px;
         width: 100%;
@@ -218,12 +273,7 @@ body {
     }
   }
   .homepage-info {
-    background: rgb(216, 222, 226);
-    background: linear-gradient(
-      270deg,
-      rgba(216, 222, 226, 1) 35%,
-      rgba(240, 244, 246, 1) 56%
-    );
+    padding: 3rem 0;
   }
   .reviewComments {
     padding: 1rem 0 1rem 0;
@@ -241,6 +291,9 @@ body {
           background-color: #00000050;
         }
       }
+    }
+    #autoWidth {
+      height: 300px !important;
     }
   }
   .corporates-slides {
@@ -298,7 +351,6 @@ body {
   }
 
   .CUS_Stats-block {
-    margin-bottom: 3rem;
     padding: 0 5rem;
     .stat-info-widget {
       width: 100%;
@@ -352,7 +404,7 @@ body {
     font-family: "Circular Std";
     font-weight: 900;
     font-style: normal;
-    margin: 5rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
     font-size: 26px;
     letter-spacing: 0px;
     color: #425072;
@@ -417,10 +469,12 @@ body {
     color: white;
   }
   .commnets-detail {
+    display: flex;
+    justify-content: center;
     .comments-detail-block {
       position: relative;
-      overflow: hidden;
-      max-height: 350px;
+      // overflow: hidden;
+      // max-height: 350px;
       box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
         0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
       padding: 24px;
@@ -476,31 +530,12 @@ body {
       align-items: center;
       justify-content: space-between;
       box-sizing: border-box;
-      margin: 15px 10px;
+      margin: 5px 10px;
     }
   }
 }
-hr {
-  width: 90px;
-  border-style: solid;
-  border-bottom-width: 2px;
-  border-color: #9c9c9c;
-  animation: slider 300ms ease-in;
-}
-@keyframes slider {
-  0% {
-    transform: translateX(-80px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
 
+// **********Footer starts**************
 .footer-block {
   padding: 0rem;
   background-color: #2063d7;
@@ -590,119 +625,585 @@ hr {
   }
 }
 
-//****media queries for mobile and tablet devices***
-@media screen and (max-width: 1000px) {
-  .navbar {
-    .nav-item {
-      border-bottom: 1px solid #9c9c9c;
+.policy-terms {
+  padding: 0 0 2rem 0;
+  .policy-heading h1 {
+    font-family: "Euclid Circular A";
+    margin: 2.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    color: $Primary-Color;
+  }
+  .policy-paragraphs {
+    padding: 40px 8rem;
+    p {
+      font-family: "Euclid Circular A";
+      color: #505252;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 15px;
     }
-    .dropdown {
-      .dropdown-menu {
-        background: $Primary-Color;
-        border: none;
-        color: #ffffff;
-        border-radius: 0;
-        box-shadow: none;
-        a {
-          color: #ffffff;
-          opacity: 0.8;
+    ol li {
+      font-family: "Euclid Circular A";
+      color: #505252;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .policy-listings {
+      padding-right: 20px;
+    }
+    label {
+      font-family: "Euclid Circular A";
+      color: $Primary-Color;
+      font-size: 24px;
+      margin: 0;
+      font-weight: 600;
+    }
+    ul li {
+      padding: 5px 0;
+      font-family: "Euclid Circular A";
+      color: #505252;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    ol {
+      font-size: 18px;
+    }
+  }
+  .terms-para p,
+  .discl {
+    margin-bottom: 2rem;
+  }
+}
+
+.Team-creds {
+  .Team-heading h1 {
+    font-family: "Euclid Circular A";
+    margin: 2.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    color: $Primary-Color;
+  }
+  .info-container {
+    padding: 0 3rem;
+    .left-highlight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .highlight-text {
+        font-family: "Euclid Circular A";
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 26px;
+        color: $Primary-Color;
+      }
+      .description,
+      .desc2 {
+        font-family: "Euclid Circular A";
+        font-weight: 500;
+        color: #505252;
+        font-size: 18px;
+      }
+      .desc2 {
+        width: 430px;
+      }
+    }
+  }
+  .team-container {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 9rem 0;
+    .our-team {
+      width: 327px;
+      .team-head {
+        display: flex;
+        justify-content: center;
+        span {
+          font-family: Euclid Circular A;
+          font-size: 40px;
+          color: #333333;
+          &:first-child {
+            font-weight: 400;
+          }
+          &:nth-child(2) {
+            font-weight: bold;
+          }
         }
       }
-    }
-    .form-buttons {
-      margin-top: 1rem;
-    }
-  }
-  .landing-page {
-    background-color: #f8f9fd;
-    .landing-bg-img1 {
-      height: 100px;
-      width: 100px;
-      top: 85px;
-    }
-    .landing-bg-img2 {
-      height: 100px;
-      width: 120px;
-      right: 0;
-    }
-    .cycle-img {
-      padding: 0 15px;
-      img {
-        position: inherit;
-        width: 100%;
-        height: 100%;
+      hr {
+        width: 80px;
+        margin-top: 0;
+        height: 2px;
+        background-color: $Primary-Color;
       }
-    }
-    .video-section {
-      .box {
-        height: 214px;
-      }
-    }
-    .reviewComments {
-      padding: 2rem 0;
-      .light-slider-box {
-        width: 300px;
-      }
-    }
-    .Stats {
-      padding: 0 3rem;
-      .stat-widget {
-        border-radius: 10px;
-      }
-    }
-    .stats-detail {
-      padding: 0 2rem;
-    }
-    .CUS_Stats-block {
-      padding: 0 2rem;
-    }
-  }
-  .our-team {
-    .team_card {
-      width: 100%;
-    }
-  }
-  .policy-terms {
-    padding: 0;
-  }
-  .footer-block {
-    padding: 60px 15px 30px 15px;
-    .address-details {
-      margin-bottom: 3rem !important;
-      text-align: center !important;
-    }
-    .copyright-box {
-      margin-top: 3rem;
-      display: flex;
-      flex-direction: column-reverse;
-      .contact-us {
-        text-align: center !important;
-      }
-      .copyright-text {
-        justify-content: center;
-        margin: 1rem 0;
-      }
-      .policy-links {
-        text-align: center;
-        a {
-          margin: 0;
+      .card-carousel {
+        padding: 2rem 0;
+        // .lSNext {
+        //   font-family: "Font Awesome 5 Pro";
+        //   font-weight: 900;
+        //   font-size: 32px;
+        //   right: 26px;
+        //   &::before {
+        //     content: "\f0a9";
+        //   }
+        // }
+        .card {
+          height: 440px;
+          border: 1px solid $Primary-Color;
+          width: 320px;
+          position: relative;
+          box-shadow: 0px 3px 60px #0000000f;
+
+          .name {
+            font-family: "Euclid Circular A";
+            font-weight: 600;
+            text-align: center;
+            color: $Primary-Color;
+            font-size: 24px;
+          }
+          .designation {
+            font-family: "Euclid Circular A";
+            color: #999999;
+            padding: 0 1.5rem;
+            text-align: center;
+            font-size: 18px;
+          }
+          .socials {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1rem 3rem;
+            width: 100%;
+            span {
+              width: 30px;
+              height: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              border-radius: 50%;
+              i {
+                color: #ffffff;
+              }
+            }
+            .linkedin {
+              background-color: #0077b5;
+            }
+            .twitter {
+              background-color: #1da1f2;
+            }
+            .facebook {
+              background-color: #4267b2;
+            }
+          }
+          .bg-blue {
+            height: 230px;
+            width: 100%;
+            background-color: $Primary-Color;
+          }
+          .center-bck {
+            display: flex;
+            padding-bottom: 3rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+          }
+          .circle {
+            top: 55px;
+            height: 160px;
+            width: 160px;
+            transform: translateX(-50%);
+            left: 50%;
+            overflow: hidden;
+            border: 2px solid #ffffff;
+            box-shadow: 0px 3px 25px #00000017;
+            position: absolute;
+            border-radius: 50%;
+            img {
+              height: 220px;
+              width: 100%;
+              top: -28px;
+              position: absolute;
+            }
+          }
         }
       }
     }
   }
 }
-// @media (min-width: 1900px) {
-//   .container,
-//   .container-lg,
-//   .container-md,
-//   .container-sm,
-//   .container-xl {
-//     max-width: 1340px;
-//   }
-// }
 
-.video-play-button {
-  position: absolute;
+.contact-Us {
+  .info-container {
+    padding: 3rem 4rem;
+    .left-highlight {
+      padding: 2rem 3rem;
+      display: flex;
+      align-items: center;
+      .text {
+        font-family: "Euclid Circular A";
+        font-weight: bold;
+        font-size: 28px;
+        color: $Primary-Color;
+      }
+      .display {
+        font-family: "Euclid Circular A";
+        color: #333333;
+        font-size: 16px;
+        margin-bottom: 2rem;
+      }
+      .contact-info {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        position: relative;
+        width: 100%;
+        margin: 1.5rem 0;
+        background-color: $Primary-Color;
+        border-radius: 40px;
+        .circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 50%;
+          height: 70px;
+          transform: translateY(-50%);
+          width: 70px;
+          border-radius: 50%;
+          left: 5px;
+          background: #ffffff;
+          position: absolute;
+          i,
+          img {
+            color: $Primary-Color;
+            width: 28px;
+            height: 28px;
+          }
+        }
+        p {
+          font-family: "Euclid Circular A";
+          color: #ffffff;
+          font-size: 16px;
+          line-height: 1.4;
+          width: 332px;
+          position: relative;
+          left: 91px;
+        }
+      }
+    }
+    .sendMessageForm {
+      .heading {
+        font-family: "Euclid Circular A";
+        font-weight: bold;
+        font-size: 28px;
+        color: $Primary-Color;
+        padding-bottom: 1.5rem;
+      }
+      .send-form {
+        padding: 3rem 4rem;
+        width: 100%;
+        background-color: #f5f5f5;
+      }
+    }
+    .get-direction {
+      margin: 3rem 0;
+      width: 100%;
+      height: 500px;
+      border: 1px solid $Primary-Color;
+    }
+  }
+}
+
+.team-modal {
+  .modal-dialog {
+    max-width: 950px;
+    .modal-content {
+      padding: 2rem 1rem 0rem 1rem;
+      .modal-header {
+        border: none;
+      }
+      .modal-body {
+        .description {
+          border: 2px solid $Primary-Color;
+          position: relative;
+          padding: 4rem 1rem 1rem 1rem;
+          box-shadow: 0px 3px 60px #0000000f;
+          .title-block {
+            position: absolute;
+            display: flex;
+            height: 120px;
+            left: 50%;
+            align-items: center;
+            transform: translateX(-50%);
+            top: -64px;
+            .circle {
+              overflow: hidden;
+              height: 100%;
+              width: 120px;
+              border: 2px solid $Primary-Color;
+              border-radius: 50%;
+              img {
+                height: 148px;
+                margin-top: -18px;
+                width: 100%;
+              }
+            }
+            .title {
+              padding: 1rem 3rem;
+              background-color: #004fd0;
+              height: 60%;
+              position: relative;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              display: flex;
+              z-index: -1;
+              left: -12px;
+              span {
+                font-family: "Euclid Circular A";
+                color: #ffffff;
+                &:first-child {
+                  font-weight: 600;
+                  font-size: 20px;
+                }
+                &:nth-child(2) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          p {
+            font-family: "Euclid Circular A";
+            color: #404143;
+            font-size: 14px;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .modal-footer {
+        border: none;
+        .socials {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          span {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 50%;
+            margin: 0 10px;
+            i {
+              color: #ffffff;
+            }
+          }
+          .linkedin {
+            background-color: #0077b5;
+          }
+          .twitter {
+            background-color: #1da1f2;
+          }
+          .facebook {
+            background-color: #4267b2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.FAQs-page {
+  .Faqs-container {
+    padding-top: 3rem;
+    .left-links {
+      padding-right: 2rem;
+      .tab-blue {
+        background-color: $Primary-Color;
+        opacity: 0.78;
+        color: #ffffff;
+      }
+      .Top-questions {
+        padding-right: 1rem !important;
+        ul {
+          padding-left: 0px !important;
+          li {
+            padding: 0.6rem 0 !important;
+          }
+        }
+      }
+      .table-content {
+        padding: 1.5rem 2rem;
+        .table-title {
+          font-family: "Euclid Circular A";
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+        }
+        .email-btn {
+          width: 100%;
+          background-color: #3875da;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+          font-family: "Euclid Circular A";
+          font-weight: 500;
+          font-size: 16px;
+        }
+        ul {
+          padding-left: 30px;
+          li {
+            list-style: none;
+            padding: 0.5rem 0;
+            font-family: "Euclid Circular A";
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .right-block {
+      padding: 0 2rem;
+      .search-box {
+        position: relative;
+        .form-control {
+          border: 1px solid $Primary-Color;
+          border-radius: 0;
+          height: 45px;
+        }
+        i {
+          position: absolute;
+          right: 10px;
+          top: 12px;
+          font-size: 20px;
+        }
+        p {
+          font-family: "Euclid Circular A";
+          color: #919191;
+          font-size: 14px;
+          margin: 10px 0;
+        }
+      }
+      .faq-content {
+        .breadcrump {
+          padding: 2rem 0;
+          i {
+            color: #8b8b8b;
+            font-size: 12px;
+            margin: 0px 10px 0 5px;
+          }
+          span {
+            font-family: "Euclid Circular A";
+            font-weight: 500;
+            &:first-child {
+              color: #8b8b8b;
+              font-size: 16px;
+            }
+            &:nth-child(2) {
+              color: #000000;
+            }
+          }
+        }
+        .faq-answers {
+          .title {
+            position: relative;
+            i {
+              position: absolute;
+              right: 0;
+              top: 5px;
+              font-size: 18px;
+            }
+            h1 {
+              font-family: "Euclid Circular A";
+              color: $Primary-Color;
+              font-weight: bold;
+              font-size: 28px;
+            }
+          }
+          .faq-blk {
+            padding-top: 1rem;
+            ol {
+              padding-left: 20px;
+              li {
+                &::marker {
+                  font-family: "Euclid Circular A";
+                  font-weight: bold;
+                  color: #434343a6;
+                  font-size: 16px;
+                }
+              }
+            }
+            .list {
+              margin-bottom: 1.5rem;
+              span {
+                padding-left: 10px;
+                display: block;
+              }
+              .question {
+                font-family: "Euclid Circular A";
+                color: $Primary-Color;
+                font-weight: bold;
+                font-size: 20px;
+                display: block;
+              }
+              .answers {
+                font-family: "Euclid Circular A";
+                color: #434343;
+                font-size: 16px;
+              }
+            }
+            .article {
+              height: 80px;
+              width: 100%;
+              background-color: $Primary-Color;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 1rem 2rem;
+              margin-top: 3rem;
+              .text {
+                font-family: "Euclid Circular A";
+                font-weight: 500;
+                font-size: 16px;
+              }
+              .likes {
+                i {
+                  padding: 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// *********container starts*******
+@media (min-width: 1900px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1340px;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1230px;
+  }
+}
+// ******container ends*******
+
+.poster_button {
+  position: absolute !important;
   z-index: 10;
   top: 50%;
   left: 50%;
@@ -716,7 +1217,7 @@ hr {
   padding: 18px 20px 18px 28px;
   &::before {
     content: "";
-    position: absolute;
+    position: absolute !important;
     z-index: 0;
     left: 50%;
     top: 50%;
@@ -730,7 +1231,7 @@ hr {
   }
   &::after {
     content: "";
-    position: absolute;
+    position: absolute !important;
     z-index: 1;
     left: 50%;
     top: 50%;
@@ -744,7 +1245,9 @@ hr {
   }
   img {
     position: relative;
+    width: 48px !important;
     z-index: 3;
+    top: -10px;
     max-width: 100%;
     width: auto;
     height: auto;
@@ -761,7 +1264,7 @@ hr {
   }
 }
 
-.video-play-button:hover:after {
+.poster_button:hover:after {
   background-color: darken($Primary-Color, 10%);
 }
 
