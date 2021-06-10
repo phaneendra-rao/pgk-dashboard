@@ -1013,6 +1013,174 @@ body {
   }
 }
 
+.FAQs-page {
+  .Faqs-container {
+    padding-top: 3rem;
+    .left-links {
+      padding-right: 2rem;
+      .tab-blue {
+        background-color: $Primary-Color;
+        opacity: 0.78;
+        color: #ffffff;
+      }
+      .Top-questions {
+        padding-right: 1rem !important;
+        ul {
+          padding-left: 0px !important;
+          li {
+            padding: 0.6rem 0 !important;
+          }
+        }
+      }
+      .table-content {
+        padding: 1.5rem 2rem;
+        .table-title {
+          font-family: "Euclid Circular A";
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+        }
+        .email-btn {
+          width: 100%;
+          background-color: #3875da;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+          font-family: "Euclid Circular A";
+          font-weight: 500;
+          font-size: 16px;
+        }
+        ul {
+          padding-left: 30px;
+          li {
+            list-style: none;
+            padding: 0.5rem 0;
+            font-family: "Euclid Circular A";
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .right-block {
+      padding: 0 2rem;
+      .search-box {
+        position: relative;
+        .form-control {
+          border: 1px solid $Primary-Color;
+          border-radius: 0;
+          height: 45px;
+        }
+        i {
+          position: absolute;
+          right: 10px;
+          top: 12px;
+          font-size: 20px;
+        }
+        p {
+          font-family: "Euclid Circular A";
+          color: #919191;
+          font-size: 14px;
+          margin: 10px 0;
+        }
+      }
+      .faq-content {
+        .breadcrump {
+          padding: 2rem 0;
+          i {
+            color: #8b8b8b;
+            font-size: 12px;
+            margin: 0px 10px 0 5px;
+          }
+          span {
+            font-family: "Euclid Circular A";
+            font-weight: 500;
+            &:first-child {
+              color: #8b8b8b;
+              font-size: 16px;
+            }
+            &:nth-child(2) {
+              color: #000000;
+            }
+          }
+        }
+        .faq-answers {
+          .title {
+            position: relative;
+            i {
+              position: absolute;
+              right: 0;
+              top: 5px;
+              font-size: 18px;
+            }
+            h1 {
+              font-family: "Euclid Circular A";
+              color: $Primary-Color;
+              font-weight: bold;
+              font-size: 28px;
+            }
+          }
+          .faq-blk {
+            padding-top: 1rem;
+            ol {
+              padding-left: 20px;
+              li {
+                &::marker {
+                  font-family: "Euclid Circular A";
+                  font-weight: bold;
+                  color: #434343a6;
+                  font-size: 16px;
+                }
+              }
+            }
+            .list {
+              margin-bottom: 1.5rem;
+              span {
+                padding-left: 10px;
+                display: block;
+              }
+              .question {
+                font-family: "Euclid Circular A";
+                color: $Primary-Color;
+                font-weight: bold;
+                font-size: 20px;
+                display: block;
+              }
+              .answers {
+                font-family: "Euclid Circular A";
+                color: #434343;
+                font-size: 16px;
+              }
+            }
+            .article {
+              height: 80px;
+              width: 100%;
+              background-color: $Primary-Color;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 1rem 2rem;
+              margin-top: 3rem;
+              .text {
+                font-family: "Euclid Circular A";
+                font-weight: 500;
+                font-size: 16px;
+              }
+              .likes {
+                i {
+                  padding: 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // *********container starts*******
 @media (min-width: 1900px) {
   .container,

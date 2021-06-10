@@ -1275,6 +1275,212 @@ body {
   background-color: #4267b2;
 }
 
+.FAQs-page .Faqs-container {
+  padding-top: 3rem;
+}
+
+.FAQs-page .Faqs-container .left-links {
+  padding-right: 2rem;
+}
+
+.FAQs-page .Faqs-container .left-links .tab-blue {
+  background-color: #004fd0;
+  opacity: 0.78;
+  color: #ffffff;
+}
+
+.FAQs-page .Faqs-container .left-links .Top-questions {
+  padding-right: 1rem !important;
+}
+
+.FAQs-page .Faqs-container .left-links .Top-questions ul {
+  padding-left: 0px !important;
+}
+
+.FAQs-page .Faqs-container .left-links .Top-questions ul li {
+  padding: 0.6rem 0 !important;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content {
+  padding: 1.5rem 2rem;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content .table-title {
+  font-family: "Euclid Circular A";
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content .email-btn {
+  width: 100%;
+  background-color: #3875da;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content ul {
+  padding-left: 30px;
+}
+
+.FAQs-page .Faqs-container .left-links .table-content ul li {
+  list-style: none;
+  padding: 0.5rem 0;
+  font-family: "Euclid Circular A";
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block {
+  padding: 0 2rem;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box {
+  position: relative;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box .form-control {
+  border: 1px solid #004fd0;
+  border-radius: 0;
+  height: 45px;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box i {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 20px;
+}
+
+.FAQs-page .Faqs-container .right-block .search-box p {
+  font-family: "Euclid Circular A";
+  color: #919191;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump {
+  padding: 2rem 0;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump i {
+  color: #8b8b8b;
+  font-size: 12px;
+  margin: 0px 10px 0 5px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump span {
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump span:first-child {
+  color: #8b8b8b;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .breadcrump span:nth-child(2) {
+  color: #000000;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .title {
+  position: relative;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .title i {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 18px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .title h1 {
+  font-family: "Euclid Circular A";
+  color: #004fd0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk {
+  padding-top: 1rem;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk ol {
+  padding-left: 20px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk ol li::marker {
+  font-family: "Euclid Circular A";
+  font-weight: bold;
+  color: #434343a6;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list {
+  margin-bottom: 1.5rem;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list span {
+  padding-left: 10px;
+  display: block;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list .question {
+  font-family: "Euclid Circular A";
+  color: #004fd0;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .list .answers {
+  font-family: "Euclid Circular A";
+  color: #434343;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .article {
+  height: 80px;
+  width: 100%;
+  background-color: #004fd0;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .article .text {
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.FAQs-page .Faqs-container .right-block .faq-content .faq-answers .faq-blk .article .likes i {
+  padding: 0 10px;
+}
+
 @media (min-width: 1900px) {
   .container,
   .container-lg,
